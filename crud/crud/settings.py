@@ -76,8 +76,15 @@ WSGI_APPLICATION = 'crud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+
+        "ENGINE": "django.db.backends.mysql",  # Change this to use MySQL
+        "NAME": "music",                  # Name of your MySQL database
+        "USER": "studio_code",              # MySQL username
+        "PASSWORD": "Vlad123!",              # MySQL password
+        "HOST": "192.168.4.58",                   # MySQL server host (e.g., localhost)
+        "PORT": "3306",                        # Default MySQL port (3306)
     }
 }
 
