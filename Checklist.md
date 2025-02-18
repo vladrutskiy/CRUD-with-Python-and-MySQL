@@ -2,7 +2,7 @@
 1. ✅ **Decide what project to build.**
 2. ✅ **Create profile/ repository at GitHub**
 3. ✅ **ADD a ReadMe file**
-4. ✅ **Share your project with class.**
+4. ✅ **Share your project with class. (Milestone 1)**
 5. ✅ **~~Create infinityfree.com account~~** Not helpful, database is not accessible from outside of the host
 6. ✅ **~~Create https://rutskyi.free.nf/ website~~**  Not helpful, database is not accessible from outside of the host
 7. ✅ **Create a page for the ComIT Final Project**
@@ -29,4 +29,5 @@
  b. ✅ Add views in views.py
  c. ✅ Edit URLS.py
  e. ✅ Create login page with Bootstarp
-13. to be updated…
+13. ✅ **Share your project with class. (Milestone 2)**
+14. to be updated…
