@@ -21,7 +21,7 @@
  d. ✅ Install PyMySQL
   I. ✅ **Install MySQL server on virtual Linux machine**
   II. ✅ Connect existing db
-  III. ✅ Make MySQL server accessible to the home network 
+  III. ✅ Make MySQL server accessible to the home network **ensure that the virtual machine has internet access**
   IV. ✅ Create users
  e. ✅ Connect music db to the project.
 12. 🔳 Develop html pages and views
