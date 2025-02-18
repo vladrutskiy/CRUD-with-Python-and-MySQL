@@ -8,6 +8,6 @@ ComIT Final Project
  a. Read the database using page UI.
  b. Update the database using page UI.
  c. Delete from the database using page UI.
-3. The page will be hosted on infinityfree.com > https://rutskyi.free.nf/
+3. The page might be hosted on infinityfree.com (optional)
 
 

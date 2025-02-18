@@ -13,7 +13,7 @@
  b. ✅ Install Django
  c. ✅ Create app 
  d. ✅ Create superuser
- e. ✅ Check Django admin is up
+ e. ✅ Check Django admin is up cd /Volumes/Storage/Github/Python/CRUD-with-Python-and-MySQL/crud and python manage.py runserver 
 11. 🔳 **MySQL configuration**
  a. ✅ Install MySQL driver
  b. ✅ Install MySQL connector
