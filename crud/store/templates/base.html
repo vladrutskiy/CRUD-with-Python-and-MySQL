@@ -13,9 +13,22 @@
    <div class="container">
     <br>
 
-   {% block content  %}
+    {% if messages %}
 
-   {% endblock %}
+    {% for message in messages %}
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy drums and guitars!</strong> {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+    {% endfor %}
+
+    {% endif %}
+
+    {% block content  %}
+
+    {% endblock %}
     
 
    </div>

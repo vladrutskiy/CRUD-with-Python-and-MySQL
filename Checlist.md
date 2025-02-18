@@ -7,7 +7,7 @@
 6. ✅ **~~Create https://rutskyi.free.nf/ website~~**  Not helpful, database is not accessible from outside of the host
 7. ✅ **Create a page for the ComIT Final Project**
 8. ✅ **~~Upload the MySQL database to the hosting.~~**   Not helpful, database is not accessible from outside of the host
-9. ❌ **Create Login page.(see item 12)**
+9. ❌ **Create Login page.(see item 12(e))**
 10. ✅ **Set up development environment on Mac**
  a. ✅ Create virtual environment 
  b. ✅ Install Django
@@ -25,5 +25,8 @@
   IV. ✅ Create users
  e. ✅ Connect music db to the project.
 12. 🔳 Develop html pages and views
- a. Create 
+ a. ✅ Import authenticate, login, logout
+ b. ✅ Add views in views.py
+ c. ✅ Edit URLS.py
+ e. ✅ Create login page with Bootstarp
 13. to be updated…
