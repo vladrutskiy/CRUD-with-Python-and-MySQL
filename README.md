@@ -1,15 +1,18 @@
 # CRUD-with-Python-and-MySQL
 ComIT Final Project
 
-Frameworks:
+**Frameworks:**
 Django
 Bootstrap
-For additional information refer to Checklist.md
+***For additional information refer to Checklist.md***
 
 1. The user will be able to login to a virtual Music Shop Admin Panel.
- a. The success login flow. (DONE) The login is supported by Django authenticate, login and logout.
+ a. The success login flow. (DONE) (The login is supported by Django authenticate, login.)
+  I. after the successful login the user is redirected to the home page (supported by redirect and render)
+  II. after the successful login a message is shown. (Bootstrap alerts)
  b. The unsuccessful login flow. (Done)
- c. The logout (In PROGRESS)
+  I. after unsuccessful login attempt a message is shown. (Bootstrap alerts)
+ c. The logout (In PROGRESS). The login is supported by Django authenticate, logout.
 2. The user would be able to perform CRUD operations with MySQL database.
  a. Read the database using page UI.
  b. Update the database using page UI.
