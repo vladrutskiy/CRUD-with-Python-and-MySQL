@@ -30,4 +30,9 @@
  c. ✅ Edit URLS.py
  e. ✅ Create login page with Bootstarp
 13. ✅ **Share your project with class. (Milestone 2)**
-14. to be updated…
+14. ✅ Create logout functionality
+15. 🔳 Create user registration functionality
+ a. Imported UserCreationForm, forms, User
+ b. 
+ c. 
+16. to be updated…
