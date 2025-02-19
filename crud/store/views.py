@@ -31,4 +31,6 @@ def home(request):
 
 # logout page view
 def logout_view(request):
-    pass
+    logout(request)
+    messages.success(request, 'You are nwo logged out')
+    return redirect ('home')
