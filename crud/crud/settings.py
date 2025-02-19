@@ -52,10 +52,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'crud.urls'
 
+PROJECT_ROOT = '/Volumes/Storage/Github/Python/CRUD-with-Python-and-MySQL'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [PROJECT_ROOT],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

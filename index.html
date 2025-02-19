@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vlad Rutskyi personal website</title>
+        <link rel="icon" type="image/png" href="./images/logo.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <link rel="stylesheet" href="./my_w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="./my_w3.js"></script>
+        <script src="./typed.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script> (function(){ emailjs.init("U62dbmqo5insWsPT2"); })();</script>
+        <!-- Load the reCAPTCHA API -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+      
+          <!-- Gogole analytics -->
+          <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G9HSXLYFL4"></script>
+        <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+           gtag('config', 'G-G9HSXLYFL4');
+         </script>
+         
+       
+
+               <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
+
+            body,
+            html {
+                height: 100%;
+                color: #56504f;
+                line-height: 1.8;
+            }
+
+            /* Create a Parallax Effect */
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3,
+            .bgimg-4
+            {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* First image (Logo. Full height) */
+            .bgimg-1 {
+                background-image: url('./images/backgrounds/3.jpg');
+                min-height: 100%;
+            }
+
+            /* Second image (Projects) */
+            .bgimg-2 {
+                background-image: url("./images/backgrounds/4.jpg");
+                min-height: 60%;
+            }
+
+            /* Third image (Certificates) */
+            .bgimg-3 {
+                background-image: url("./images/backgrounds/1.jpg");
+                min-height: 60%;
+            }
+
+            /* Forth image (Contact) */
+            .bgimg-4 {
+                background-image: url("./images/backgrounds/2.jpg");
+                min-height: 60%;
+                
+            }
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+
+            /* Turn off parallax scrolling for tablets and phones */
+             @media only screen and (max-device-width: 1600px) {
+
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3,
+                .bgimg-4 {
+                    background-attachment: scroll;
+                    min-height: 400px;
+                }
+            }
+            
+        </style>
+    </head>
+<body>
+  
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar " id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right "
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> ABOUT</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> PROJECTS</a>
+            <a href="#certificates" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> CERTIFICATES</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> CONTACT</a>
+            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a> -->
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+            <a href="#certificates" class="w3-bar-item w3-button" onclick="toggleFunction()">CERTIFICATES</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <!-- <div class="cutoutTextMain w3-round-large">Vlad Rutskyi</div>  -->
+        <h1 class="w3-content w3-center w3-display-middle w3-text-black" >Vlad Rutskyi</h1>
+        
+
+          <!-- <a class="w3-button w3-center w3-margin-top-big w3-display-middle w3-round-large w3-small w3-light-grey w2-margin-bottom " href="https://docs.google.com/document/d/15GRLXHDKbjmGJzh31sPprYquzpERR-sJ1VOKvXS1Hoo/edit?usp=sharing" target="_blank">Download resume</a> -->
+     
+        
+    </div>
+
+    <div>
+         <br> 
+        </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-border w3-border-radius-20" id="about" >
+        <h3 class="w3-center w3-animate-fading">ABOUT ME</h3>
+
+        <!-- Element where the typing effect will appear -->
+         <h4 class="w3-margin-big  w3-text-teal "  >I am a 🧑🏻‍💻 <span class="typedText"></span></h4>
+
+ 
+  <!-- The typing effect -->
+  <script>
+    var typingEffect = new Typed(".typedText", {
+      strings: ["QA Engineer", "Quality Analyst", "QA Tester", "Automation Engineer", "QA Team Lead"],
+      loop: true,  // Keep looping
+      typeSpeed: 50,  // Typing speed in milliseconds
+      backSpeed: 50,   // Speed for erasing the text
+      backDelay: 2000  // Wait before erasing the text
+    });
+  </script>
+
+
+        <p class="w3-margin-big w2-center slide hidden" data-slide="left"><em>I'm passionate about ensuring the quality and excellence of digital products.</em></p>
+        <p class="w3-container w3-margin slide hidden" data-slide="bottom" > I'm a results-driven QA Engineer you can count on. 
+            I have a proven track record of 7+ years in ensuring the quality and excellence of digital products.
+
+            <br> I specialize in providing thorough regression testing, creating effective test cases, and optimizing
+             testing processes for maximum efficiency.
+           
+           Dedicated to a thorough attention for detail, I have successfully contributed to the seamless delivery
+            of high-quality software, finding critical and edge-case issues. Committed to continuous improvement,
+             I stay abreast of industry trends and emerging technologies.</p>
+             
+        <div class="w3-row w3-round-large">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <h4><b><i class="w3-margin-right-big "></i>My name is Vald Rutskyi</b></h4><br>
+                <div class="flip-card w3-round-large">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front w3-round-large">
+                <img src="./images/square.jpg" class=" w3-image w2-opacity w3-hover-opacity-off w3-round-large" alt="Photo of Me"
+                    > 
+                </div>
+                <div class="flip-card-back w3-round-large">
+                    <p> </p>
+                    <img src="./images/Vlad R QR-3.png" class=" w3-image w3-round-large " alt="QR code"
+                    height="70%" width="70%">
+                    <p>Scan to download V-card</p> 
+                    <!-- <p>or press the button to</p> 
+                    <a class="w3-button w3-round-large w3-small w3-light-grey w3-margin-bottom" href="https://docs.google.com/document/d/15GRLXHDKbjmGJzh31sPprYquzpERR-sJ1VOKvXS1Hoo/edit?usp=sharing" target="_blank">Download resume</a> -->
+                  </div>
+                </div>
+                </div>
+            </div>
+       
+            <!-- to Hide this text on small devices just change 2 to 3-->
+            <div class="w3-col m6 w2-hide-small w3-padding-small">
+                <p> </p>
+            <br>
+        
+                <p class="slide hidden" data-slide="right">Welcome to my website. 
+                <br>I'm attentive, analytical, and flexible Software QA Engineer. 
+                Dedicated to the excellence of digital products and managing complex projects.
+            <br> 
+                 Professional and accurate in developing test strategies, and regression testing. 
+                  Able to work with minimum supervision. I possess close attention to detail and analytical thinking, 
+                 contributing to the continuous improvement of the delivery of high-quality software.
+        <br> I have hands-on experience with large SaaS, augmented reality, banking, and other projects.
+        Feel free to contact me, to discuss how my expertise and experience can elevate your team’s product quality.
+                 </p>
+            </div>
+        </div>
+        <!-- Some progress bars may be use them later-->
+        <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p> -->
+       <!--  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div> -->
+        <div class="w3-center ">
+
+        <a class="w3-button w3-center w3-round-large w3-small w3-light-grey w3-margin-bottom " href="https://docs.google.com/document/d/15GRLXHDKbjmGJzh31sPprYquzpERR-sJ1VOKvXS1Hoo/edit?usp=sharing" target="_blank">Download resume</a>
+    </div>
+    </div>
+
+    <div>
+        <br> 
+       </div>
+
+
+    <!-- Row with numbers -->
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">7+</span><br>
+            Years of experience
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">7+</span><br>
+            Projects Done
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">20+</span><br>
+            Certificates gained
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">∞</span><br>
+            Happy clients
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Certificates Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="cutoutTextSecondary w3-round-large">Projects</div>
+        <!-- <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CERTIFICATES</span> 
+            
+        </div> -->
+    </div>
+
+    <div>
+        <br> 
+       </div>
+
+     <!-- Container (Projects section) -->
+     <div class="w3-content w3-container w3-border w3-border-radius-20" id="projects">
+        <h3 class="w3-center ">PROJECTS </h3> <!-- Don't forget to remove the UNDER CONSTRUCTION -->
+        <p class="w3-center"><em>Several words about projects I worked on.</em></p>
+        <!-- <p> I'm a results-driven QA Engineer you can count on. 
+            I have a proven track record of 7+ years in ensuring the quality and excellence of digital products.
+
+            <br> I specialize in providing thorough regression testing, creating effective test cases, and optimizing
+             testing processes for maximum efficiency.
+           
+           Dedicated to a keen eye for detail, I have successfully contributed to the seamless delivery
+            of high-quality software, finding critical and edge-case issues. Committed to continuous improvement,
+             I stay abreast of industry trends and emerging technologies.</p> -->
+
+
+     <!-- This particular div is for show/hide projects button -->
+     <div>
+             <!-- Upward Aviation Services block approx lines -->
+        <div class="w3-row w3-border w3-border-radius-20">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <h4><b><i class="w3-margin-right " style="font-size: 12px;"></i> <a href="https://upwardaviation.ca/" >Upward Aviation Services</a> </b></h4>
+                <p><i class="fa w3-margin-right"></i>Aug 2024 -  Present, <em>Calgary, Alberta, Canada </em></p><br>
+                
+                <img src="https://upwardaviation.ca/wp-content/uploads/2024/08/Logo-1-289x300.png" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="Upward Aviation Services Logo"
+                    width="300" height="300">
+            </div>
+
+            <!-- To Hide this text on small devices change "w2-hide-small" to "w3-hide-small"  -->
+            <div class="w3-col m6 w2-hide-small w3-padding-large">
+                <p class="slide hidden" data-slide="right"> This project started as a website renewal.
+                <br> But we ended up with almost the whole rebranding process. Upward Aviation Services is a Calgary-based company that provides different aircraft-related services, from training to import assistance.
+                <br> At first, we created a website. The next step was creating a logo, which was warmly accepted by the company owners. After that, we created mockups for printing the company logo on clothes. The project is ongoing.
+                <br> This project is developed with the assistance of <a href="https://www.behance.net/natalia-lozovska"> Natalia Lozovska</a>.</p>
+            
+                <!-- Dots for collapsed content and hidden content span -->
+                <span id="dots2"></span> 
+                <span id="more2" style="display: none;">
+                    <ul>
+                        <li> I mastered my knowledge about WordPress, building websites, launching them, and maintaining them on this platform.</li>
+                        <li> In addition, I learned how to work with different plugins, and how to avoid some WordPress website-building mistakes.</li>
+                        <li> Added reCaptcha spam protection.</li>
+                        <li> Added CloudFlare protection.</li>
+                    </ul>
+                </span>
+                 <!-- Load More Button  -->
+                <button class="w3-button w3-padding-large w3-light-grey w3-round-large" style="position: inherit; left: 40%; bottom: 10%;" id="myBtn2" onclick="toggleContent('dots2', 'more2', 'myBtn2')">Load more</button>
+                
+            </div>
+            
+            
+        </div>
+        <div>
+                <br>
+                              
+            </div>
+      <span id="dots8"></span> 
+                    <span id="more8" style="display: none;">
+         <!-- SeeHearAct project lines 254 - 315 -->
+        <div class="w3-row w3-border w3-border-radius-20">
+            <div class="w3-col m6 w3-right w3-padding-large">
+                <h4><b><i class="fa w3-margin-right"></i><a href="https://seehearact.org/">See.Hear.Act</a> </b></h4>
+                <p><i class="fa w3-margin-right"></i>Aug 2024 -  Sep 2024, <em>Calgary, Alberta, Canada </em></p><br>
+                <img src="./images/2024-09-10_11-40-43-copy.png" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="See Hear Act image"
+                    width="300" height="300">
+            </div>
+
+            <!-- To Hide this text on small devices change "w2-hide-small" to "w3-hide-small" --> 
+            <div class="w3-col m6 w2-hide-small w3-padding-large">
+                <p >  It was a 2 month contract. To cretae and test a website. This website is built as an event landing page. 
+                <br> See Hear Act is a one-day conference for people interested in understanding Islam’s influence in the West. The conference will also give you practical help to respond in ways that will encourage Muslims to trust in Jesus and flourish in a new life with Him.
+                <br> The second part of the project was developing a 1/3 letter-sized flyer and a full-scaled letter-sized advertisement. 
+                <br> This project is developed with the assistance of <a href="https://www.behance.net/natalia-lozovska"> Natalia Lozovska</a>.</p> 
+            
+                <!-- Dots for collapsed content and hidden content span -->
+                <span id="dots3"></span> 
+                <span id="more3" style="display: none;">
+                    <ul>
+                        <li> I learned much about WordPress, building websites, launching them, and maintaining them on this platform.</li>
+                        <li> Additionally, I learned about plugins and how to install and configure them.</li>
+                        <li> Added reCaptcha spam protection.</li>
+                        <li> Set up Consent Preferences.</li>
+                        <li> Practiced my PhotoShop knowledge.</li>
+                    </ul>
+                </span>
+                <!-- Load More Button  -->
+                <button class="w3-button w3-padding-large w3-light-grey w3-round-large" id="myBtn3" onclick="toggleContent('dots3', 'more3', 'myBtn3')">Load more</button>
+            </div>
+            
+          
+            
+        </div>
+
+            <div>
+                <br>
+                              
+            </div>
+      
+
+            <!-- Abbeydale Christian Fellowship project lines -->
+            <div class="w3-row w3-border w3-border-radius-20">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <h4><b><i class="w3-margin-right " style="font-size: 12px;"></i> <a href="https://abbeydale.org" >Abbeydale Christian Fellowship</a> </b></h4>
+                    <p><i class="fa w3-margin-right"></i>May 2024 -  Present, <em>Calgary, Alberta, Canada </em> </p><br>
+                    <img src="https://abbeydale.org/wp-content/uploads/2019/05/ACF_Logo-390x241.jpg" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="Abbeydale Christian Fellowship logo"
+                        width="300" height="300">
+                </div>
+    
+                <!-- To Hide this text on small devices change "w2-hide-small" to "w3-hide-small"  -->
+                <div class="w3-col m6 w2-hide-small w3-padding-large">
+                    <p > This project started with volunteer website testing for Abbeydale Christian Fellowship church..
+                    <br> I found several critical security issues and contacted the website owner, providing ways and solutions to eliminate them.
+                    <br> This project encouraged me to create a quick Playwright automation test suit to find such issues on any WordPress-hosted website.
+                    <br> Also, we have an agreement to renew the Abbeydale Christian Fellowship church website. It will be redesigned from scratch by <a href="https://www.behance.net/natalia-lozovska"> Natalia Lozovska</a>.</p>
+                
+                    <!-- Dots for collapsed content and hidden content span -->
+                    <span id="dots4"></span> 
+                    <span id="more4" style="display: none;">
+                        <ul>
+                            <li> I learned a lot about vulnerabilities in old versions of WordPress-hosted websites.</li>
+                            <li> I learned how to fix those issues.</li>
+                            <li> I started my journey in learning Playwright and created a small automated set of tests.</li>
+                            <li> Practiced my API testing knowledge.</li>
+                        </ul>
+                    </span>
+                      <!-- Load More Button  -->
+                    
+                <button class="w3-button w3-padding-large w3-light-grey w3-round-large" id="myBtn4" onclick="toggleContent('dots4', 'more4', 'myBtn4')">Load more</button>
+                </div>
+            
+              
+                    
+            </div>
+
+            <div>
+                <br>
+                              
+            </div>
+ 
+   <!-- Portside project lines  -->
+        <div class="w3-row w3-border w3-border-radius-20">
+            <div class="w3-col m6 w3-right w3-padding-large">
+                <h4><b><i class="fa w3-margin-right"></i><a href="https://www.portside.co/">Portside</a> </b></h4>
+                <p><i class="fa w3-margin-right"></i>Feb 2022 -  Feb 2024 <em>California, US, Remote</em></p><br>
+                <img src="https://www.portside.co/static/img/logo-dark-standart.svg" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="Portside logo"
+                    width="300" height="300">
+            </div>
+
+            <!-- To Hide this text on small devices change "w2-hide-small" to "w3-hide-small" --> 
+            <div class="w3-col m6 w2-hide-small w3-padding-large">
+                <p >  As the Software QA Team Lead at Portside Inc., I led the testing efforts for the Trip Assist project. 
+                <br> This innovative solution automated flight change notifications, seamlessly integrated with scheduling software and provided 360-degree visibility into booking statuses. 
+                <br> My leadership ensured the robustness of key features, including flexible booking management, streamlined billing processes, and empowering crew members with real-time access to flight schedules through the Trip Assist mobile app. 
+                </p> 
+            
+                <!-- Dots for collapsed content and hidden content span -->
+                <span id="dots5"></span> 
+                <span id="more5" style="display: none;">
+                    <ul>
+                        <li> Successfully streamlined Portside's QA processes by meticulously evaluating and categorizing test cases. Significantly reduced the number of low-priority test cases, leading to a remarkable 20% acceleration in regression testing speed.</li>
+                        <li> Actively collaborated with cross-functional teams, including development and product management, to align QA processes with the overall project goals.</li>
+                        <li> Implemented robust quality metrics to monitor and measure the effectiveness of the QA processes.</li>
+                        <li> Initiated knowledge-sharing sessions to disseminate best practices, empowering team members to contribute more effectively to the testing process.</li>
+                        <li> Recognized as the sole QA tester for the corporate website, showcasing expertise in end-to-end testing.</li>
+                        <li> Acknowledged for exceptional contributions to the Auth0 implementation, ensuring a secure and efficient authentication process.</li>
+                        <li> Played a pivotal role in identifying and addressing critical security issues, increasing the overall security of the corporate system.</li>
+                    </ul>
+                </span>
+                <!-- Load More Button  -->
+                <button class="w3-button w3-padding-large w3-light-grey w3-round-large" id="myBtn5" onclick="toggleContent('dots5', 'more5', 'myBtn5')">Load more</button>
+            </div>
+                
+                  
+            
+        </div>
+
+        <div>
+            <br>
+                          
+        </div>
+
+
+  <!-- RE'FLEKT project  -->
+            <div class="w3-row w3-border w3-border-radius-20">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <h4><b><i class="w3-margin-right " style="font-size: 12px;"></i> <a href="http://www.re-flekt.com/" >RE'FLEKT</a> </b></h4>
+                    <p><i class="fa w3-margin-right"></i>Apr 2021 -  Dec 2021 <em>Munich, Germany, Remote</em></p><br>
+                    <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEgbbIzD8Aslg/company-logo_200_200/company-logo_200_200/0/1630543713206/reflekt_gmbh_logo?e=1734566400&v=beta&t=FpGXzyVTnWlX48qc3CVsittHdBKBfkunSjLFxO1RhfY" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="Reflekt logo"
+                        width="300" height="300">
+                </div>
+    
+                <!-- To Hide this text on small devices change "w2-hide-small" to "w3-hide-small"  -->
+                <div class="w3-col m6 w2-hide-small w3-padding-large">
+                    <p >  In role at RE'FLEKT, a Munich-based technology company which specialized in Augmented and Mixed Reality applications. Contributed to the quality assurance of their main product, REFLEKT Remote.
+                    <br> This innovative solution was used by wide-known clients such as Audi, BMW, and Bosch.
+                    <br> It was focused on enhancing business continuity and operational efficiency by providing secure and enterprise-ready remote support through AR and live video on desktop, mobile devices, and wearables. 
+                    <br> Played a key role in ensuring the reliability and effectiveness of this cutting-edge technology for front-line workers and technicians.</p>
+                
+                    <!-- Dots for collapsed content and hidden content span -->
+                    <span id="dots6"></span> 
+                    <span id="more6" style="display: none;">
+                        <ul>
+                            <li> Performed complex testing, which lead to the resolution of edge and high-priority (blocking) issues.</li>
+                            <li> Expansion of test case coverage to at least 80% of product functionality.</li>
+                            <li> Collaboration with the Development team, for the successful delivery of planned user stories.</li>
+                            <li> Establishing effective communication channels with cross-functional and cross-national teams.</li>
+                        </ul>
+                    </span>
+                      <!-- Load More Button  -->
+                    
+                <button class="w3-button w3-padding-large w3-light-grey w3-round-large" id="myBtn6" onclick="toggleContent('dots6', 'more6', 'myBtn6')">Load more</button>
+                </div>
+            
+                               
+            </div>
+            <div>
+                <br>                          
+            </div>
+
+               <!-- SBDIgital project lines  -->
+        <div class="w3-row w3-border w3-border-radius-20">
+            <div class="w3-col m6 w3-right w3-padding-large">
+                <h4><b><i class="fa w3-margin-right"></i><a href="https://www.sbdigital.lt/">SBDigital, UAB</a> </b></h4>
+                <p><i class="fa w3-margin-right"></i>Aug 2020 -  Mar 2021 <em>Vilnius, Lithuania, Remote</em></p><br>
+                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGlDe4LvmuMQA/company-logo_200_200/company-logo_200_200/0/1631374727281/sbdigital_logo?e=1735171200&v=beta&t=u0geuo-cbemwEb7wxaECUXuC-BC6UcAcJyxn2CPZHFs" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="SBDigital logo"
+                    width="300" height="300">
+            </div>
+
+            <!-- To Hide this text on small devices change "w2-hide-small" to "w3-hide-small" --> 
+            <div class="w3-col m6 w2-hide-small w3-padding-large">
+                <p >  Collaborating with the SBDigital team, contributed to creating a cross-platform browser catered to Muslim users by aggregating essential features. 
+                <br> The browser was successfully developed for Android, iOS, OSx, and Windows platforms, offering unique functionalities such as Halal browsing and Azan notifications.
+            
+                </p> 
+            
+                <!-- Dots for collapsed content and hidden content span -->
+                <span id="dots7"></span> 
+                <span id="more7" style="display: none;">
+                    <ul>
+                        <li> Used experience in exploratory testing to find hidden defects and potential usability issues within applications.</li>
+                        <li> Applied a strategic and systematic approach, utilizing exploratory testing as a proactive measure to identify unexpected issues, contributing to a more robust and resilient product.</li>
+                        <li> Demonstrated proficiency in creating detailed test cases and test suites for both new features and regression testing.</li>
+                        <li> Conducted thorough review, analysis, and documentation of test results using tools such as Confluence, Jira, and Google Docs.</li>
+                        <li> Used a diverse set of testing environments and devices to validate the consistent performance of applications, contributing to a reliable and uniform user experience.</li>
+                        <li> Was a sole QA Engineer on the project</li>
+                        
+                    </ul>
+                </span>
+                <!-- Load More Button  -->
+                <button class="w3-button w3-padding-large w3-light-grey w3-round-large" id="myBtn7" onclick="toggleContent('dots7', 'more7', 'myBtn7')">Load more</button>
+            </div>
+                          
+                  
+            
+        </div>
+
+        <div>
+            <br>
+                          
+        </div>
+
+        <!-- Access softek project  -->
+        <div class="w3-row w3-border w3-border-radius-20">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <h4><b><i class="w3-margin-right " style="font-size: 12px;"></i> <a href="https://www.accesssoftek.com/" >Access Softek</a> </b></h4>
+                <p><i class="fa w3-margin-right"></i>Oct 2016 -  Apr 2020 <em>California, US, Remote</em></p><br>
+                <img src="https://accesssoftek.com/wp-content/uploads/2024/05/accesssoftek-logo-color.svg" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="Access Softek logo"
+                    width="300" height="300">
+            </div>
+
+            <!-- To Hide this text on small devices change "w2-hide-small" to "w3-hide-small"  -->
+            <div class="w3-col m6 w2-hide-small w3-padding-large">
+                <p >  While working at Access Softek, progressed from a Junior Software Quality Assurance Engineer to a Middle Software Quality Assurance Engineer and Scrum Master.
+                <br> As a team member, actively contributed to the testing of a digital banking application suite. Which contained an administrative interface and user-centric web and mobile apps.
+                <br> One of the key features of this suite was transfers through an intuitive three-column screen. Users only needed to specify the destination, source, and optional recurrence for a seamless experience.  
+                <br> Conducted manual testing of web and mobile applications. Executed Record and Replay automation test suits using Selenium Web Driver. Created detailed test documentation, and managed the whole cycle of bug reporting using Jira.</p>
+            
+                <!-- Dots for collapsed content and hidden content span -->
+                <span id="dots9"></span> 
+                <span id="more9" style="display: none;">
+                    <ul>
+                        <li> Sprint Planning activities (creating Sprint Plan & discussing it with the team, Sprint Check-in meeting participation).</li>
+                        <li> Scheduling & holding Team Meetings (daily, retro, demo).</li>
+                        <li> Providing help with process organization for the QA Team lead.</li>
+                        <li> Helping with regression planning by providing QA availability information for the regression coordinator.</li>
+                        <li> Exploratory testing of applications, based on experience.</li>
+                        <li> Test documentation creation (detailed test cases, test suits) for new features & regression test documentation updating.</li>
+                        <li> Review, analyze and document test results and metrics (work with CF, Jira, google-docs).</li>
+                        <li> Testing ADA implementation & compatibility of the product on desktop & mobile devices</li>
+                    </ul>
+                </span>
+                  <!-- Load More Button  -->
+                
+            <button class="w3-button w3-padding-large w3-light-grey w3-round-large" id="myBtn9" onclick="toggleContent('dots9', 'more9', 'myBtn9')">Load more</button>
+            </div>
+        
+                           
+        </div>
+        <div>
+            <br>                          
+        </div>
+
+
+        </span> 
+        <button class="w3-button w3-padding-large w3-light-grey w3-round-large" id="myBtn8" onclick="toggleContent('dots8', 'more8', 'myBtn8')">Load more</button>
+        </div>
+        <div>
+            <br>
+                          
+        </div>
+        </div> 
+        <div>
+            <br>                          
+        </div>
+
+
+        <!-- These are some progress bars may be I'll use them later -->
+
+        <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+        <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div> -->
+        <!-- Container (Technologies I worked with) -->
+     <div class="w2-content w2-container w2-border w2-border-radius-20" >
+        <h3 class="w3-center ">Technologies I worked with </h3>
+
+        <!-- Container for moving icons -->
+        <div class="icon-container ">
+            <div class="icons ">
+              
+              
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/WordPress.svg" alt="WordPress Icon">
+                <span class="icon-name">WordPress</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Visual-Studio-Code-(VS-Code).svg" alt="Visual Studio Code Icon">
+                <span class="icon-name">Visual Studio Code</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Ubuntu.svg" alt="Ubuntu Icon">
+                <span class="icon-name">Ubuntu</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/TypeScript.svg" alt="TypeScript Icon">
+                <span class="icon-name">TypeScript</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Storybook.svg" alt="Storybook Icon">
+                <span class="icon-name">Storybook</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/snagit.jpeg" alt="Snagit Icon" style="border-radius: 5px;">
+                <span class="icon-name">Snagit</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/SQLite.svg" alt="SQLite Icon">
+                <span class="icon-name">SQLite</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Slack.svg" alt="Slack Icon">
+                <span class="icon-name">Slack</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Selenium.svg" alt="Selenium Icon">
+                <span class="icon-name">Selenium</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/reflector.png" alt="Reflector 4 Icon" style="border-radius: 5px;">
+                <span class="icon-name">Reflector 4</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/PuTTY.svg" alt="PuTTY Icon">
+                <span class="icon-name">PuTTY</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Postman.svg" alt="Postman Icon">
+                <span class="icon-name">Postman</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/PostgresSQL.svg" alt="PostgresSQL Icon">
+                <span class="icon-name">PostgresSQL</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Playwrite.svg" alt="Playwrite Icon" style="width: 100px;">
+                <span class="icon-name">Playwrite</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/PDFM-icon.png" alt="Paralleles Desktop Icon" style="width: 100px;">
+                <span class="icon-name">Paralleles Desktop</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Opera.svg" alt="Opera Icon">
+                <span class="icon-name">Opera</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Linux.svg" alt="Linux Icon">
+                <span class="icon-name">Linux</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Jira.svg" alt="Jira Icon">
+                <span class="icon-name">Jira</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Jenkins.svg" alt="Jenkins Icon">
+                <span class="icon-name">Jenkins</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/JavaScript.svg" alt="JavaScript Icon">
+                <span class="icon-name">JavaScript</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Java.svg" alt="Java Icon">
+                <span class="icon-name">Java</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/HTML5.svg" alt="HTML5 Icon">
+                <span class="icon-name">HTML5</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Homebrew.svg" alt="Homebrew Icon">
+                <span class="icon-name">Homebrew</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/GitHub-Actions.svg" alt="Git Actions Icon">
+                <span class="icon-name">Git Actions</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/GitLab.svg" alt="GitLab Icon">
+                <span class="icon-name">GitLab</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/GitHub.svg" alt="GitHub Icon">
+                <span class="icon-name">GitHub</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Git.svg" alt="Git Icon">
+                <span class="icon-name">Git</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Firefox.svg" alt="Firefox Icon">
+                <span class="icon-name">Firefox</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/FileZilla.svg" alt="FileZilla Icon">
+                <span class="icon-name">FileZilla</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Figma.svg" alt="Figma Icon">
+                <span class="icon-name">Figma</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Eclipse-IDE.svg" alt="Eclipse IDE Icon">
+                <span class="icon-name">Eclipse IDE</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/DBeaver.svg" alt="DBeaver Icon">
+                <span class="icon-name">DBeaver</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Cucumber.svg" alt="Cucumber Icon">
+                <span class="icon-name">Cucumber</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/CSS3.svg" alt="CSS3 Icon">
+                <span class="icon-name">CSS3</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Confluence.svg" alt="Confluence Icon">
+                <span class="icon-name">Confluence</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Cloudflare.svg" alt="Cloudflare Icon">
+                <span class="icon-name">Cloudflare</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Chrome.svg" alt="Chrome Icon">
+                <span class="icon-name">Chrome</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/camtasia.png" alt="Camtasia Icon">
+                <span class="icon-name">Camtasia</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/BrowserStack.svg" alt="BrowserStack Icon">
+                <span class="icon-name">BrowserStack</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Apple.svg" alt="Apple Icon">
+                <span class="icon-name">Apple</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Apple-Safari.svg" alt="Apple-Safari Icon">
+                <span class="icon-name">Apple-Safari</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Android.svg" alt="Android Icon">
+                <span class="icon-name">Android</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Android-Studio.svg" alt="Android Studio Icon">
+                <span class="icon-name">Android Studio</span>
+              </div>
+
+              <!-- Duplicate -->
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/WordPress.svg" alt="WordPress Icon">
+                <span class="icon-name">WordPress</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Visual-Studio-Code-(VS-Code).svg" alt="Visual Studio Code Icon">
+                <span class="icon-name">Visual Studio Code</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Ubuntu.svg" alt="Ubuntu Icon">
+                <span class="icon-name">Ubuntu</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/TypeScript.svg" alt="TypeScript Icon">
+                <span class="icon-name">TypeScript</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Storybook.svg" alt="Storybook Icon">
+                <span class="icon-name">Storybook</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/snagit.jpeg" alt="Snagit Icon" style="border-radius: 5px;">
+                <span class="icon-name">Snagit</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/SQLite.svg" alt="SQLite Icon">
+                <span class="icon-name">SQLite</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Slack.svg" alt="Slack Icon">
+                <span class="icon-name">Slack</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Selenium.svg" alt="Selenium Icon">
+                <span class="icon-name">Selenium</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/reflector.png" alt="Reflector 4 Icon" style="border-radius: 5px;">
+                <span class="icon-name">Reflector 4</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/PuTTY.svg" alt="PuTTY Icon">
+                <span class="icon-name">PuTTY</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Postman.svg" alt="Postman Icon">
+                <span class="icon-name">Postman</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/PostgresSQL.svg" alt="PostgresSQL Icon">
+                <span class="icon-name">PostgresSQL</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Playwrite.svg" alt="Playwrite Icon" style="width: 100px;">
+                <span class="icon-name">Playwrite</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/PDFM-icon.png" alt="Paralleles Desktop Icon" style="width: 100px;">
+                <span class="icon-name">Paralleles Desktop</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Opera.svg" alt="Opera Icon">
+                <span class="icon-name">Opera</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Linux.svg" alt="Linux Icon">
+                <span class="icon-name">Linux</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Jira.svg" alt="Jira Icon">
+                <span class="icon-name">Jira</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Jenkins.svg" alt="Jenkins Icon">
+                <span class="icon-name">Jenkins</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/JavaScript.svg" alt="JavaScript Icon">
+                <span class="icon-name">JavaScript</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Java.svg" alt="Java Icon">
+                <span class="icon-name">Java</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/HTML5.svg" alt="HTML5 Icon">
+                <span class="icon-name">HTML5</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Homebrew.svg" alt="Homebrew Icon">
+                <span class="icon-name">Homebrew</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/GitHub-Actions.svg" alt="Git Actions Icon">
+                <span class="icon-name">Git Actions</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/GitLab.svg" alt="GitLab Icon">
+                <span class="icon-name">GitLab</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/GitHub.svg" alt="GitHub Icon">
+                <span class="icon-name">GitHub</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Git.svg" alt="Git Icon">
+                <span class="icon-name">Git</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Firefox.svg" alt="Firefox Icon">
+                <span class="icon-name">Firefox</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/FileZilla.svg" alt="FileZilla Icon">
+                <span class="icon-name">FileZilla</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Figma.svg" alt="Figma Icon">
+                <span class="icon-name">Figma</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Eclipse-IDE.svg" alt="Eclipse IDE Icon">
+                <span class="icon-name">Eclipse IDE</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/DBeaver.svg" alt="DBeaver Icon">
+                <span class="icon-name">DBeaver</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Cucumber.svg" alt="Cucumber Icon">
+                <span class="icon-name">Cucumber</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/CSS3.svg" alt="CSS3 Icon">
+                <span class="icon-name">CSS3</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Confluence.svg" alt="Confluence Icon">
+                <span class="icon-name">Confluence</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Cloudflare.svg" alt="Cloudflare Icon">
+                <span class="icon-name">Cloudflare</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Chrome.svg" alt="Chrome Icon">
+                <span class="icon-name">Chrome</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/camtasia.png" alt="Camtasia Icon">
+                <span class="icon-name">Camtasia</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/BrowserStack.svg" alt="BrowserStack Icon">
+                <span class="icon-name">BrowserStack</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Apple.svg" alt="Apple Icon">
+                <span class="icon-name">Apple</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Apple-Safari.svg" alt="Apple-Safari Icon">
+                <span class="icon-name">Apple-Safari</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Android.svg" alt="Android Icon">
+                <span class="icon-name">Android</span>
+              </div>
+
+              <div class="icon-wrapper">
+                <img src="./images/Icons/for me/Android-Studio.svg" alt="Android Studio Icon">
+                <span class="icon-name">Android Studio</span>
+              </div>
+
+            
+
+            </div>
+          </div>
+
+        </div>
+
+        
+    
+    
+     
+
+    <!-- Third Parallax Image with Certificates Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="cutoutTextSecondary w3-round-large">Certificates</div>
+        <!-- <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CERTIFICATES</span> 
+            
+        </div> -->
+    </div>
+
+    <div>
+        <br>
+    </div>
+
+       <!-- Container (Certificates Section) -->
+<div class="w3-content w3-container w3-border w3-border-radius-20" id="certificates">
+    <h3 class="w3-center">MY CERTIFICATES</h3>
+    <p class="w3-center"><em>Here are some of my certificates.<br></em></p><br>
+    
+
+
+    <div class="w3-row-padding w3-center">
+
+      
+
+        <div class="w3-col m3 slide hidden" data-slide="left">
+            <img src="./images/cropped/From Tester to QA Lead Game Testing, Jira and QA Mastery Dec 4 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="From Tester to QA Lead Game Testing, Jira and QA Mastery">
+        </div>
+
+        <div class="w3-col m3 slide hidden" data-slide="bottom">
+            <img src="./images/cropped/DevOps Tools for Beginners Vagrant Dec 02 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="DevOps Tools for Beginners Vagrant">
+        </div>
+
+        <div class="w3-col m3 slide hidden" data-slide="bottom">
+            <img src="./images/cropped/Malware Analysis Dec 02 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Malware Analysis">
+        </div>
+
+        <div class="w3-col m3 slide hidden" data-slide="right">
+            <img src="./images/cropped/Make a WordPress website with Elementor Nov 23 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Make a WordPress website with Elementor">
+        </div>
+
+       
+        
+    </div>
+    <span id="dots1"> </span>
+    <span id="more1" style="display: none;">
+        <div class="w3-row-padding w3-center w3-section">
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Ethical Hacking Web Hacking Intro Nov 23 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Ethical Hacking Web Hacking Intro">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Securing your Digital Life Nov 23 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Securing your Digital Life">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Cyber security Anti virus Nov 11 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Cyber security Anti virus">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Web enumeration Nov 11 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Ethical Hacking: Web enumeration">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Android Malware Analysis Nov 10 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Android Malware Analysis">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Docker Basics Unleashed Nov 10 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Docker Basics Unleashed">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Cyber Security Awareness for Remote Workers Nov 10 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Cyber Security Awareness for Remote Workers">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/uploading Nov 8 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Ethical Hacking: Hack by Uploading">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Windows exploitation basics Nov 5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Windows exploitation basics">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/How websites work Oct 25.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="How websites work">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Introduction_to_Business_and_Data_Analysis.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Introduction to Business and Data Analysis">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Hacker_Methodology.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Ethical Hacking: Hacker Methodology">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Git, GitLab, GitHub for software developers Oct 8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Git, GitLab, GitHub for software developers">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Selenium with Java Oct 7, 2024.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Selenium WebDriver">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/Success magnet Oct 4, 2024.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Success magnet">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/interview system.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="interview system">
+        </div>
+
+          <div class="w3-col m3 ">
+            <img src="./images/cropped/interviewing skills.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="interviewing skills">
+        </div>
+
+            <div class="w3-col m3">
+                <img src="./images/cropped/ChatGPT Content.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="ChatGPT Content">
+            </div>
+
+            <div class="w3-col m3 ">
+                <img src="./images/cropped/mac security.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Mac Security Masterclass">
+            </div>
+            
+            <div class="w3-col m3">
+                <img src="./images/cropped/Phishing attacs.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Identify and Prevent Phishing Attacks: Before They Harm You">
+            </div>
+    
+            <div class="w3-col m3">
+                <img src="./images/cropped/information security fundamentals.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Information Security Fundamentals">
+            </div>
+    
+            <div class="w3-col m3">
+                <img src="./images/cropped/agile and scrum.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Professional Diploma in Agile and Scrum">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/cropped/cyberSecurity.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="CyberSecurity Bootcamp">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/cropped/Intro_PlayWright_23_07_24.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Introduction to Playwright">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/cropped/Intro_Postman_06_24.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+                alt="Introduction to Postman API">
+            </div>
+
+        
+            <div class="w3-col m3">
+                <img src="./images/cropped/JS_16_11_23.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Introduction to JavaScript">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/cropped/Setting_Foundation_for_Automation_13_11_23.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Setting a Foundation for Successful Test Automation">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/cropped/Intro_JS_08_11_23.png" style="width:100%" onclick="onClick(this)" 
+                class="w3-hover-opacity" alt="Introduction to JavaScript">
+            </div>
+            <div class="w3-col m3">
+                <img src="./images/cropped/Intro_Auto_Testing_10_23.png" style="width:100%" 
+                onclick="onClick(this)" class="w3-hover-opacity" alt="Introduction to Automation Testing">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/cropped/GitHub_10_23.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="GitHub Tutorial for Beginners">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/cropped/CSS_27_04_2020.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="CSS Course">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/cropped/HTML_28_07_2016.png" style="width:100%" onclick="onClick(this)" 
+                class="w3-hover-opacity" alt="HTML course">
+            </div>
+            <div class="w3-col m3">
+            <img src="./images/cropped/SQL_20_07_16.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="This certificate demonstrates theoretical understanding of SQL">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="./images/cropped/Hillel_2016.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="QA graduation certificate">
+        </div>
+
+        <div class="w3-col m3">
+                <img src="./images/cropped/rock profile.png" style="width:100%" onclick="onClick(this)" 
+                class="w3-hover-opacity" alt="Rock Your LinkedIn Profile">
+            </div>
+
+        <div class="w3-col m3">
+                <img src="./images/cropped/finding job.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Finding a Job on LinkedIn">
+            </div>
+
+        </div>
+    </span>
+
+    <button class="w3-button w3-padding-large w3-light-grey w3-round-large" style="margin-top:64px" id="myBtn1" onclick="toggleContent('dots1', 'more1', 'myBtn1')">Load more</button>
+</div>
+<div>
+    <br>
+</div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Forth Parallax Image with Certificates Text -->
+    <div class="bgimg-4 w3-display-container w3-opacity-min">
+        <div class="cutoutTextSecondary w3-round-large">Contact</div>
+        <!-- <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div> -->
+    </div>
+    
+    <!-- Container (Contact Section) -->
+     <div  >  
+        <br>
+    <div class="w3-content w3-container w3-border w3-border-radius-20" id="contact" onmouseover="typeWriter()" onmouseout="startErasing()">
+        <h3 class="w3-center">WHERE YOU CAN FIND ME</h3>
+        <p class="w3-center"><em>I'd love to chat!</em></p>
+        
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5015.965850037989!2d-114.08088330062834!3d51.05340308096748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fe58f8970f3%3A0x5f0abb68c3235805!2sEau%20Claire%2C%20Calgary%2C%20AB!5e0!3m2!1sen!2sca!4v1722305917929!5m2!1sen!2sca" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+                <!-- <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-round" style="width:100%"> -->
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <a href="https://maps.app.goo.gl/qMB859fJ1f9XLBYs6" target="_blank">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Eau Claire, Calgary, Canada<br>
+                </a>
+                <a href= "tel:+14036293752">
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1(403)-629-3752<br>
+            </a>
+                    <a href="https://www.linkedin.com/in/vladyslav-rutskyi" target="_blank">
+                    <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> LinkedIn: Vlad Rutskyi<br>
+                </a>
+                    <a href="https://github.com/vladrutskiy" target="_blank">
+                    <i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> GitHub: Vlad Rutskyi<br>
+                </a>
+                <a href="mailto:v.rutskiy@icloud.com">
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    v.rutskiy@icloud.com<br>
+                </a>
+                    <script>
+                        var i = 0;
+                        
+                        var txt = 'to swing by for a cup of coffee, or contact me.';
+                        var speed = 50; 
+                        var typing;
+                        var eraseTimeout;
+                        var eraseSpeed = 25;
+                        var eraseDelay = 1000; 
+                        </script>
+                    <p> You are welcome <span id="demo"></span></p>
+                    
+                </div>
+            </div>
+            
+              
+                <!-- ' <i class="fa fa-coffee"></i> '-->
+
+
+                
+                <!-- Success message -->
+            <div id="successMessage" class="success-message">Message sent successfully!</div>
+
+               <!-- Contact Form -->
+            <form id="contactForm">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                  <div class="w3-half">
+                     <label for="name" class="mandatory">Name</label>
+                      <input class="w3-input w3-border" type="text" id="name" placeholder="John" name="name" required>
+                      <span class="error-message" id="nameError">Name is required and must be at least 2 characters long.</span>
+                    </div>
+                    <div class="w3-half">
+                        <label for="name" class="mandatory">Last Name</label>
+                         <input class="w3-input w3-border" type="text" id="lastname" placeholder="Doe" name="lastname" required>
+                         <span class="error-message" id="lastnameError">Name is required and must be at least 2 characters long.</span>
+                       </div>
+                 <div class="w3-half">
+                   <label for="email" class="mandatory">Email</label>
+                   <input class="w3-input w3-border" type="email" id="email" placeholder="john@doe.com" name="email" required>
+                    <span class="error-message" id="emailError">Please enter a valid email address.</span>
+                   </div>
+                 
+                   <div class="w3-half">
+                    <br>
+                    <label class="mandatory">
+                        <input type="checkbox" id="consentCheckbox" name="consent" required>
+                        
+                         I consent to have this website store my submitted information so they can respond to my inquiry.
+                      </label>
+                      <span id="consentError" style="color: red; display: none;">Please check this box to give consent.</span>
+                   </div>
+                 </div>
+                 
+                <label for="message" class="mandatory">Message</label>
+                <textarea class="w3-input w3-border" id="message" placeholder="Message" name="message" required rows="4"></textarea>
+                <script>
+                    let recognition;
+                    const resultElement = document.getElementById("message");  // Select the textarea by ID
+            
+                    // Start speech recognition
+                    function startConverting() {
+                        if ('webkitSpeechRecognition' in window) {
+                            recognition = new webkitSpeechRecognition();
+                            setupRecognition(recognition);
+                            recognition.start();
+                        } else {
+                            alert("Speech Recognition is not supported in this browser.");
+                        }
+                    }
+            
+                    // Configure speech recognition
+                    function setupRecognition(recognition) {
+                        recognition.continuous = true;
+                        recognition.interimResults = true;
+                        recognition.lang = 'en-US';
+            
+                        recognition.onresult = function(event) {
+                            const { finalTranscript, interTranscript } = processResult(event.results);
+                            resultElement.value = finalTranscript + interTranscript;  // Use value for <textarea>
+                        };
+            
+                        recognition.onerror = function(event) {
+                            console.error("Error occurred in recognition: ", event.error);
+                        };
+                    }
+            
+                    // Process recognition results
+                    function processResult(results) {
+                        let finalTranscript = '';
+                        let interTranscript = '';
+            
+                        for (let i = 0; i < results.length; i++) {
+                            let transcript = results[i][0].transcript;
+                            if (results[i].isFinal) {
+                                finalTranscript += transcript;
+                            } else {
+                                interTranscript += transcript;
+                            }
+                        }
+            
+                        return { finalTranscript, interTranscript };
+                    }
+            
+                    // Stop speech recognition
+                    function stopConverting() {
+                        if (recognition) {
+                            recognition.stop();
+                        }
+                    }
+                </script>
+                <span class="error-message" id="messageError">Message is required.</span>
+
+                <button class="w3-button w3-light-grey w3-round-large w3-left w3-section w3-margin-right-small" onclick="event.preventDefault();startConverting()">
+                    <i class="fa fa-microphone"></i>
+                </button>
+                <button class="w3-button w3-light-grey w3-round-large w3-left w3-section" onclick="event.preventDefault();stopConverting()">
+                    <i class="fa fa-stop"></i>
+                </button>
+              
+                <!-- reCAPTCHA widget -->
+               <div class="g-recaptcha" data-sitekey="6Le8RE4qAAAAACv_wBMWg3aBWHBeFl7RHFoLdC92"></div>
+               <span id="recaptchaError" style="color: red; display: none;">Please complete the reCAPTCHA.</span>
+
+                 
+               <button class="w3-button w3-light-grey w3-round-large w3-right w3-section" type="submit">
+               <i class="fa fa-paper-plane"></i> Send Message
+               </button>
+               <div >
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <label style="color: red" >
+                                          
+                    Please note that Text-to-speech is an experimental feature, and it is active only for the Message entry box. Don't fully rely on it. It is just for fun.
+                  </label>
+                  
+               </div>
+               </form>
+
+             <script>
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get reCAPTCHA token
+    const recaptchaResponse = grecaptcha.getResponse();
+
+    if (!recaptchaResponse) {
+        alert('Please complete the reCAPTCHA challenge.');
+        return;
+    }
+
+    // Prepare form data
+    const formData = new FormData(event.target);
+    formData.append('recaptcha_response', recaptchaResponse);
+
+    // Send data to the server
+    fetch('/submit-form', {
+        method: 'POST',
+        body: formData,
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Form submitted successfully!');
+            } else {
+                alert('reCAPTCHA validation failed. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+});
+
+              
+                       // Email validation function using regex
+                      function validateEmail(email) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                   return emailRegex.test(email);
+                      }
+
+                      // Show error message for a specific field
+                      function showError(fieldId, errorMessageId, message) {
+                    document.getElementById(fieldId).classList.add('input-error');
+                    const errorElement = document.getElementById(errorMessageId);
+                    errorElement.style.display = 'block';
+                    errorElement.innerHTML = message;
+                    }
+
+                 // Hide error message for a specific field
+                function hideError(fieldId, errorMessageId) {
+                document.getElementById(fieldId).classList.remove('input-error');
+                document.getElementById(errorMessageId).style.display = 'none';
+                   }
+
+                 // Handle form submission
+                document.getElementById('contactForm').addEventListener('submit', function(event) {
+                 event.preventDefault(); // Prevent default form submission
+
+                 // Get form values
+                 var name = document.getElementById('name').value.trim();
+                 var lastname = document.getElementById('lastname').value.trim();
+                 var email = document.getElementById('email').value.trim();
+                 var message = document.getElementById('message').value.trim();
+
+       
+                 // Validation flags
+                var isValid = true;
+
+                // Validate name
+                if (!name) {
+                showError('name', 'nameError', 'Name is required.');
+                  isValid = false;
+                 } else if (name.length < 2) {
+                 showError('name', 'nameError', 'Name must be at least 2 characters long.');
+                  isValid = false;
+                 } else {
+                 hideError('name', 'nameError');
+                  }
+                  // Validate lasname
+                if (!lastname) {
+                showError('lastname', 'lastnameError', 'last Name is required.');
+                  isValid = false;
+                 } else if (lastname.length < 2) {
+                 showError('lastname', 'lastnameError', 'Last Name must be at least 2 characters long.');
+                  isValid = false;
+                 } else {
+                 hideError('lastname', 'lastnameError');
+                  }
+
+                 // Validate email
+                 if (!email) {
+                 showError('email', 'emailError', 'Email is required.');
+                 isValid = false;
+                  } else if (!validateEmail(email)) {
+                  showError('email', 'emailError', 'Please enter a valid email address.');
+                  isValid = false;
+                  } else {
+                    hideError('email', 'emailError');
+                  }
+
+                // Validate message
+                if (!message) {
+                 showError('message', 'messageError', 'Message is required.');
+                 isValid = false;
+                 } else {
+                 hideError('message', 'messageError');
+                 }
+                 
+                //  checkbox validation
+                 function validateForm() {
+                var consentCheckbox = document.getElementById('consentCheckbox');
+                var consentError = document.getElementById('consentError');
+
+                if (!consentCheckbox.checked) {
+                consentError.style.display = 'inline';  // Show error message
+                return false;  // Prevent form submission
+                } else {
+                consentError.style.display = 'none';  // Hide error message if checkbox is checked
+                }
+                return true;  // Allow form submission
+                 }
+
+                 // If validation fails, return
+                 if (!isValid) {
+                   return;
+                    }
+
+            // Prepare the template parameters for EmailJS
+             var templateParams = {
+             name: name,
+             lastname: lastname,
+             email: email,
+             message: message
+            };
+
+          // Send email via EmailJS
+             emailjs.send('service_bxhkmnh', 'template_du4ima7', templateParams)
+            .then(function(response) {
+                document.getElementById('successMessage').style.display = 'block';
+
+                // Clear the form fields after successful submission
+                document.getElementById('contactForm').reset();
+                
+                // Hide the success message after a few seconds
+                setTimeout(function() {
+                    document.getElementById('successMessage').style.display = 'none';
+                }, 5000); // Hide after 5 seconds
+            }, function(error) {
+                console.error('FAILED...', error);
+            });
+             });
+             </script>
+
+        
+            </div>
+            
+        </div>
+
+    </div>
+    <br>
+</div>
+    
+
+    <!-- Footer.  -->
+    <footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off" >
+      
+        <a href="#home" class="w3-button w3-light-grey w3-round-large"><i class="fa fa-arrow-up w3-margin-right-small"></i>To the top</a>
+        <div class="w3-xlarge w3-section ">
+          
+            <!-- <i class="fa fa-w3 w3-hover-opacity"></i> -->
+            <!-- <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i> -->
+            <a href="https://www.linkedin.com/in/vladyslav-rutskyi" target="blank">
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </a>
+        <a href="https://github.com/vladrutskiy" target="blank">
+            <i class="fa fa-github w3-hover-opacity"></i>
+        </a>
+        <p class="w3-small"><i class="fa fa-copyright "></i> <span id="current-year"></span> All rights reserved.</p>
+    <!-- <p > <i class="fa fa-copyright w3-small" id="current-year"> All rights reserved.</i></p> -->
+    <!-- <a class="w3-button w3-round-large w3-small w3-light-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> -->
+    <!-- Footer end. -->
+    
+    </footer>
+   
+    <script>
+        // JavaScript to dynamically add the current year
+        const currentYear = new Date().getFullYear();
+        document.getElementById("current-year").textContent = currentYear;
+      </script>
+    
+
+ 
+</body>
+
+</html>
