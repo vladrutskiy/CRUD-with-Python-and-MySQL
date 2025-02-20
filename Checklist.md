@@ -31,4 +31,6 @@
  e. ✅ Create login page with Bootstarp
 13. ✅ **Share your project with class. (Milestone 2)**
 14. ✅ Connect all tables from the existing DB 
+ a. ✅ Tables are editable.
+ b. ✅ Tables are containing info
 15. to be updated…
