@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Calgary Music</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
           </li>
 
           {% if user.is_authenticated %}
@@ -21,7 +21,7 @@
             <a class="nav-link " href="{% url 'home' %}">Login</a>
           </li>
           {% endif %}
-          <!-- <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
@@ -31,18 +31,18 @@
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </li> -->
-          <!-- <li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
-        </ul> -->
-        <!-- <form class="d-flex" role="search">
+        </ul>
+        <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
+        </form>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
@@ -51,14 +51,13 @@
             href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
             <i class="fa fa-bars"></i>
         </a>
-        <a href="#home" class="w3-bar-item w3-button">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> ABOUT</a>
-        <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> PROJECTS</a>
-        <a href="#certificates" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> CERTIFICATES</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> CONTACT</a>
-        <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-            <i class="fa fa-search"></i>
-        </a> -->
+        <a href="index.html/#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="index.html/#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> ABOUT</a>
+        <a href="index.html/#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> PROJECTS</a>
+        <a href="index.html/#certificates" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> CERTIFICATES</a>
+        <a href="index.html/#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> CONTACT</a>
+        <a href="home.html/#CMAT" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> CMAT</a>
+      
     </div>
 
     <!-- Navbar on small screens -->
@@ -67,6 +66,6 @@
         <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
         <a href="#certificates" class="w3-bar-item w3-button" onclick="toggleFunction()">CERTIFICATES</a>
         <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-        <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+       
     </div>
 </div>

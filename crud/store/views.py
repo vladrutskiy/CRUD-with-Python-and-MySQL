@@ -34,3 +34,7 @@ def logout_view(request):
     logout(request)
     messages.success(request, 'You are now logged out')
     return redirect ('home')
+
+# index.html function
+def index_view(request):
+    return render (request, 'index.html')

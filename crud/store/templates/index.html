@@ -1,17 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Vlad Rutskyi personal website</title>
-        <link rel="icon" type="image/png" href="./images/logo.png">
+        <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
        
-        <link rel="stylesheet" href="./my_w3.css">
+        <link rel="stylesheet" href="{% static 'css/my_w3.css' %}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        <script src="./my_w3.js"></script>
-        <script src="./typed.js"></script>
+        <script src="{% static 'css/my_w3.js' %}"></script>
+        <script src="{% static 'css/typed.js' %}"></script>
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script> (function(){ emailjs.init("U62dbmqo5insWsPT2"); })();</script>
         <!-- Load the reCAPTCHA API -->
@@ -62,7 +63,7 @@
 
             /* First image (Logo. Full height) */
             .bgimg-1 {
-                background-image: url('./images/backgrounds/3.jpg');
+                background-image: url('{% static "images/backgrounds/3.jpg" %}');
                 min-height: 100%;
             }
 
