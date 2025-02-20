@@ -30,4 +30,5 @@
  c. ✅ Edit URLS.py
  e. ✅ Create login page with Bootstarp
 13. ✅ **Share your project with class. (Milestone 2)**
-14. to be updated…
+14. ✅ Connect all tables from the existing DB 
+15. to be updated…
