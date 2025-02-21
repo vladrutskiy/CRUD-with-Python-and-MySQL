@@ -191,12 +191,12 @@
                 <div class="flip-card w3-round-large">
                     <div class="flip-card-inner">
                         <div class="flip-card-front w3-round-large">
-                <img src="./images/square.jpg" class=" w3-image w2-opacity w3-hover-opacity-off w3-round-large" alt="Photo of Me"
+                <img src='{% static "images/square.jpg" %}' class=" w3-image w2-opacity w3-hover-opacity-off w3-round-large" alt="Photo of Me"
                     > 
                 </div>
                 <div class="flip-card-back w3-round-large">
                     <p> </p>
-                    <img src="./images/Vlad R QR-3.png" class=" w3-image w3-round-large " alt="QR code"
+                    <img src='{% static "images/Vlad R QR-3.png"%}' class=" w3-image w3-round-large " alt="QR code"
                     height="70%" width="70%">
                     <p>Scan to download V-card</p> 
                     <!-- <p>or press the button to</p> 
@@ -343,7 +343,7 @@
             <div class="w3-col m6 w3-right w3-padding-large">
                 <h4><b><i class="fa w3-margin-right"></i><a href="https://seehearact.org/">See.Hear.Act</a> </b></h4>
                 <p><i class="fa w3-margin-right"></i>Aug 2024 -  Sep 2024, <em>Calgary, Alberta, Canada </em></p><br>
-                <img src="./images/2024-09-10_11-40-43-copy.png" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="See Hear Act image"
+                <img src='{% static "images/2024-09-10_11-40-43-copy.png" %}' class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="See Hear Act image"
                     width="300" height="300">
             </div>
 
@@ -467,7 +467,7 @@
                 <div class="w3-col m6 w3-center w3-padding-large">
                     <h4><b><i class="w3-margin-right " style="font-size: 12px;"></i> <a href="http://www.re-flekt.com/" >RE'FLEKT</a> </b></h4>
                     <p><i class="fa w3-margin-right"></i>Apr 2021 -  Dec 2021 <em>Munich, Germany, Remote</em></p><br>
-                    <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEgbbIzD8Aslg/company-logo_200_200/company-logo_200_200/0/1630543713206/reflekt_gmbh_logo?e=1734566400&v=beta&t=FpGXzyVTnWlX48qc3CVsittHdBKBfkunSjLFxO1RhfY" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="Reflekt logo"
+                    <img src="https://allvectorlogo.com/img/2016/06/re-flekt-logo.png" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="Reflekt logo"
                         width="300" height="300">
                 </div>
     
@@ -504,7 +504,7 @@
             <div class="w3-col m6 w3-right w3-padding-large">
                 <h4><b><i class="fa w3-margin-right"></i><a href="https://www.sbdigital.lt/">SBDigital, UAB</a> </b></h4>
                 <p><i class="fa w3-margin-right"></i>Aug 2020 -  Mar 2021 <em>Vilnius, Lithuania, Remote</em></p><br>
-                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGlDe4LvmuMQA/company-logo_200_200/company-logo_200_200/0/1631374727281/sbdigital_logo?e=1735171200&v=beta&t=u0geuo-cbemwEb7wxaECUXuC-BC6UcAcJyxn2CPZHFs" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="SBDigital logo"
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/97/SalamWeb_logo.svg/1024px-SalamWeb_logo.svg.png" class="w3-round-large w3-image w3-opacity w3-hover-opacity-off" onclick="onClick(this)" alt="SBDigital logo"
                     width="300" height="300">
             </div>
 
@@ -618,437 +618,439 @@
         <!-- Container for moving icons -->
         <div class="icon-container ">
             <div class="icons ">
-              
+              {% load static %}
               
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/WordPress.svg" alt="WordPress Icon">
+                <img src='{% static "images/Icons/for me/WordPress.svg" %}' alt="WordPress Icon">
                 <span class="icon-name">WordPress</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Visual-Studio-Code-(VS-Code).svg" alt="Visual Studio Code Icon">
+                <img src='{% static "images/Icons/for me/Visual-Studio-Code-(VS-Code).svg" %}' alt="Visual Studio Code Icon">
                 <span class="icon-name">Visual Studio Code</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Ubuntu.svg" alt="Ubuntu Icon">
+                <img src='{% static "images/Icons/for me/Ubuntu.svg" %}' alt="Ubuntu Icon">
                 <span class="icon-name">Ubuntu</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/TypeScript.svg" alt="TypeScript Icon">
+                <img src='{% static "images/Icons/for me/TypeScript.svg" %}' alt="TypeScript Icon">
                 <span class="icon-name">TypeScript</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Storybook.svg" alt="Storybook Icon">
+                <img src='{% static "images/Icons/for me/Storybook.svg" %}' alt="Storybook Icon">
                 <span class="icon-name">Storybook</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/snagit.jpeg" alt="Snagit Icon" style="border-radius: 5px;">
+                <img src='{% static "images/Icons/snagit.jpeg" %}' alt="Snagit Icon" style="border-radius: 5px;">
                 <span class="icon-name">Snagit</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/SQLite.svg" alt="SQLite Icon">
+                <img src='{% static "images/Icons/for me/SQLite.svg" %}' alt="SQLite Icon">
                 <span class="icon-name">SQLite</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Slack.svg" alt="Slack Icon">
+                <img src='{% static "images/Icons/for me/Slack.svg" %}' alt="Slack Icon">
                 <span class="icon-name">Slack</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Selenium.svg" alt="Selenium Icon">
+                <img src='{% static "images/Icons/for me/Selenium.svg" %}' alt="Selenium Icon">
                 <span class="icon-name">Selenium</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/reflector.png" alt="Reflector 4 Icon" style="border-radius: 5px;">
+                
+                <img src='{% static "images/Icons/reflector.png" %}' alt="Reflector 4 Icon" style="border-radius: 5px;">
                 <span class="icon-name">Reflector 4</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/PuTTY.svg" alt="PuTTY Icon">
+                <img src='{% static "images/Icons/for me/PuTTY.svg" %}' alt="PuTTY Icon">
                 <span class="icon-name">PuTTY</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Postman.svg" alt="Postman Icon">
+                <img src='{% static "images/Icons/for me/Postman.svg" %}' alt="Postman Icon">
                 <span class="icon-name">Postman</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/PostgresSQL.svg" alt="PostgresSQL Icon">
+                <img src='{% static "images/Icons/for me/PostgresSQL.svg" %}' alt="PostgresSQL Icon">
                 <span class="icon-name">PostgresSQL</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Playwrite.svg" alt="Playwrite Icon" style="width: 100px;">
+                <img src='{% static "images/Icons/for me/Playwrite.svg" %}' alt="Playwrite Icon" style="width: 100px;">
                 <span class="icon-name">Playwrite</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/PDFM-icon.png" alt="Paralleles Desktop Icon" style="width: 100px;">
+                <img src='{% static "images/Icons/PDFM-icon.png" %}' alt="Paralleles Desktop Icon" style="width: 100px;">
                 <span class="icon-name">Paralleles Desktop</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Opera.svg" alt="Opera Icon">
+                <img src='{% static "images/Icons/for me/Opera.svg" %}' alt="Opera Icon">
                 <span class="icon-name">Opera</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Linux.svg" alt="Linux Icon">
+                <img src='{% static "images/Icons/for me/Linux.svg" %}' alt="Linux Icon">
                 <span class="icon-name">Linux</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Jira.svg" alt="Jira Icon">
+                <img src='{% static "images/Icons/for me/Jira.svg"%}' alt="Jira Icon">
                 <span class="icon-name">Jira</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Jenkins.svg" alt="Jenkins Icon">
+                <img src='{% static "images/Icons/for me/Jenkins.svg"%}' alt="Jenkins Icon">
                 <span class="icon-name">Jenkins</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/JavaScript.svg" alt="JavaScript Icon">
+                <img src='{% static "images/Icons/for me/JavaScript.svg"%}' alt="JavaScript Icon">
                 <span class="icon-name">JavaScript</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Java.svg" alt="Java Icon">
+                <img src='{% static "images/Icons/for me/Java.svg"%}' alt="Java Icon">
                 <span class="icon-name">Java</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/HTML5.svg" alt="HTML5 Icon">
+                <img src='{% static "images/Icons/for me/HTML5.svg"%}' alt="HTML5 Icon">
                 <span class="icon-name">HTML5</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Homebrew.svg" alt="Homebrew Icon">
+                <img src='{% static "images/Icons/for me/Homebrew.svg"%}' alt="Homebrew Icon">
                 <span class="icon-name">Homebrew</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/GitHub-Actions.svg" alt="Git Actions Icon">
+                <img src='{% static "images/Icons/for me/GitHub-Actions.svg" %}' alt="Git Actions Icon">
                 <span class="icon-name">Git Actions</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/GitLab.svg" alt="GitLab Icon">
+                <img src='{% static "images/Icons/for me/GitLab.svg" %}'alt="GitLab Icon">
                 <span class="icon-name">GitLab</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/GitHub.svg" alt="GitHub Icon">
+                <img src='{% static "images/Icons/for me/GitHub.svg" %}' alt="GitHub Icon">
                 <span class="icon-name">GitHub</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Git.svg" alt="Git Icon">
+                <img src='{% static "images/Icons/for me/Git.svg" %}' alt="Git Icon">
                 <span class="icon-name">Git</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Firefox.svg" alt="Firefox Icon">
+                <img src='{% static "images/Icons/for me/Firefox.svg" %}' alt="Firefox Icon">
                 <span class="icon-name">Firefox</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/FileZilla.svg" alt="FileZilla Icon">
+                <img src='{% static "images/Icons/for me/FileZilla.svg" %}' alt="FileZilla Icon">
                 <span class="icon-name">FileZilla</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Figma.svg" alt="Figma Icon">
+                <img src='{% static "images/Icons/for me/Figma.svg" %}' alt="Figma Icon">
                 <span class="icon-name">Figma</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Eclipse-IDE.svg" alt="Eclipse IDE Icon">
+                <img src='{% static "images/Icons/for me/Eclipse-IDE.svg" %}' alt="Eclipse IDE Icon">
                 <span class="icon-name">Eclipse IDE</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/DBeaver.svg" alt="DBeaver Icon">
+                <img src='{% static "images/Icons/for me/DBeaver.svg" %}' alt="DBeaver Icon">
                 <span class="icon-name">DBeaver</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Cucumber.svg" alt="Cucumber Icon">
+                <img src='{% static "images/Icons/for me/Cucumber.svg" %}' alt="Cucumber Icon">
                 <span class="icon-name">Cucumber</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/CSS3.svg" alt="CSS3 Icon">
+                <img src='{% static "images/Icons/for me/CSS3.svg" %}' alt="CSS3 Icon">
                 <span class="icon-name">CSS3</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Confluence.svg" alt="Confluence Icon">
+                <img src='{% static "images/Icons/for me/Confluence.svg" %}' alt="Confluence Icon">
                 <span class="icon-name">Confluence</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Cloudflare.svg" alt="Cloudflare Icon">
+                <img src='{% static "images/Icons/for me/Cloudflare.svg" %}' alt="Cloudflare Icon">
                 <span class="icon-name">Cloudflare</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Chrome.svg" alt="Chrome Icon">
+                <img src='{% static "images/Icons/for me/Chrome.svg" %}' alt="Chrome Icon">
                 <span class="icon-name">Chrome</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/camtasia.png" alt="Camtasia Icon">
+                <img src='{% static "images/Icons/camtasia.png" %}' alt="Camtasia Icon">
                 <span class="icon-name">Camtasia</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/BrowserStack.svg" alt="BrowserStack Icon">
+                <img src='{% static "images/Icons/for me/BrowserStack.svg" %}' alt="BrowserStack Icon">
                 <span class="icon-name">BrowserStack</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Apple.svg" alt="Apple Icon">
+                <img src='{% static "images/Icons/for me/Apple.svg" %}' alt="Apple Icon">
                 <span class="icon-name">Apple</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Apple-Safari.svg" alt="Apple-Safari Icon">
+                <img src='{% static "images/Icons/for me/Apple-Safari.svg" %}' alt="Apple-Safari Icon">
                 <span class="icon-name">Apple-Safari</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Android.svg" alt="Android Icon">
+                <img src='{% static "images/Icons/for me/Android.svg" %}' alt="Android Icon">
                 <span class="icon-name">Android</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Android-Studio.svg" alt="Android Studio Icon">
+                <img src='{% static "images/Icons/for me/Android-Studio.svg" %}' alt="Android Studio Icon">
                 <span class="icon-name">Android Studio</span>
               </div>
 
               <!-- Duplicate -->
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/WordPress.svg" alt="WordPress Icon">
+                <img src='{% static "images/Icons/for me/WordPress.svg" %}' alt="WordPress Icon">
                 <span class="icon-name">WordPress</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Visual-Studio-Code-(VS-Code).svg" alt="Visual Studio Code Icon">
+                <img src='{% static "images/Icons/for me/Visual-Studio-Code-(VS-Code).svg" %}' alt="Visual Studio Code Icon">
                 <span class="icon-name">Visual Studio Code</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Ubuntu.svg" alt="Ubuntu Icon">
+                <img src='{% static "images/Icons/for me/Ubuntu.svg" %}' alt="Ubuntu Icon">
                 <span class="icon-name">Ubuntu</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/TypeScript.svg" alt="TypeScript Icon">
+                <img src='{% static "images/Icons/for me/TypeScript.svg" %}' alt="TypeScript Icon">
                 <span class="icon-name">TypeScript</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Storybook.svg" alt="Storybook Icon">
+                <img src='{% static "images/Icons/for me/Storybook.svg" %}' alt="Storybook Icon">
                 <span class="icon-name">Storybook</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/snagit.jpeg" alt="Snagit Icon" style="border-radius: 5px;">
+                <img src='{% static "images/Icons/snagit.jpeg" %}' alt="Snagit Icon" style="border-radius: 5px;">
                 <span class="icon-name">Snagit</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/SQLite.svg" alt="SQLite Icon">
+                <img src='{% static "images/Icons/for me/SQLite.svg" %}' alt="SQLite Icon">
                 <span class="icon-name">SQLite</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Slack.svg" alt="Slack Icon">
+                <img src='{% static "images/Icons/for me/Slack.svg" %}' alt="Slack Icon">
                 <span class="icon-name">Slack</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Selenium.svg" alt="Selenium Icon">
+                <img src='{% static "images/Icons/for me/Selenium.svg" %}' alt="Selenium Icon">
                 <span class="icon-name">Selenium</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/reflector.png" alt="Reflector 4 Icon" style="border-radius: 5px;">
+                
+                <img src='{% static "images/Icons/reflector.png" %}' alt="Reflector 4 Icon" style="border-radius: 5px;">
                 <span class="icon-name">Reflector 4</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/PuTTY.svg" alt="PuTTY Icon">
+                <img src='{% static "images/Icons/for me/PuTTY.svg" %}' alt="PuTTY Icon">
                 <span class="icon-name">PuTTY</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Postman.svg" alt="Postman Icon">
+                <img src='{% static "images/Icons/for me/Postman.svg" %}' alt="Postman Icon">
                 <span class="icon-name">Postman</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/PostgresSQL.svg" alt="PostgresSQL Icon">
+                <img src='{% static "images/Icons/for me/PostgresSQL.svg" %}' alt="PostgresSQL Icon">
                 <span class="icon-name">PostgresSQL</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Playwrite.svg" alt="Playwrite Icon" style="width: 100px;">
+                <img src='{% static "images/Icons/for me/Playwrite.svg" %}' alt="Playwrite Icon" style="width: 100px;">
                 <span class="icon-name">Playwrite</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/PDFM-icon.png" alt="Paralleles Desktop Icon" style="width: 100px;">
+                <img src='{% static "images/Icons/PDFM-icon.png" %}' alt="Paralleles Desktop Icon" style="width: 100px;">
                 <span class="icon-name">Paralleles Desktop</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Opera.svg" alt="Opera Icon">
+                <img src='{% static "images/Icons/for me/Opera.svg" %}' alt="Opera Icon">
                 <span class="icon-name">Opera</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Linux.svg" alt="Linux Icon">
+                <img src='{% static "images/Icons/for me/Linux.svg" %}' alt="Linux Icon">
                 <span class="icon-name">Linux</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Jira.svg" alt="Jira Icon">
+                <img src='{% static "images/Icons/for me/Jira.svg"%}' alt="Jira Icon">
                 <span class="icon-name">Jira</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Jenkins.svg" alt="Jenkins Icon">
+                <img src='{% static "images/Icons/for me/Jenkins.svg"%}' alt="Jenkins Icon">
                 <span class="icon-name">Jenkins</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/JavaScript.svg" alt="JavaScript Icon">
+                <img src='{% static "images/Icons/for me/JavaScript.svg"%}' alt="JavaScript Icon">
                 <span class="icon-name">JavaScript</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Java.svg" alt="Java Icon">
+                <img src='{% static "images/Icons/for me/Java.svg"%}' alt="Java Icon">
                 <span class="icon-name">Java</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/HTML5.svg" alt="HTML5 Icon">
+                <img src='{% static "images/Icons/for me/HTML5.svg"%}' alt="HTML5 Icon">
                 <span class="icon-name">HTML5</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Homebrew.svg" alt="Homebrew Icon">
+                <img src='{% static "images/Icons/for me/Homebrew.svg"%}' alt="Homebrew Icon">
                 <span class="icon-name">Homebrew</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/GitHub-Actions.svg" alt="Git Actions Icon">
+                <img src='{% static "images/Icons/for me/GitHub-Actions.svg" %}' alt="Git Actions Icon">
                 <span class="icon-name">Git Actions</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/GitLab.svg" alt="GitLab Icon">
+                <img src='{% static "images/Icons/for me/GitLab.svg" %}'alt="GitLab Icon">
                 <span class="icon-name">GitLab</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/GitHub.svg" alt="GitHub Icon">
+                <img src='{% static "images/Icons/for me/GitHub.svg" %}' alt="GitHub Icon">
                 <span class="icon-name">GitHub</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Git.svg" alt="Git Icon">
+                <img src='{% static "images/Icons/for me/Git.svg" %}' alt="Git Icon">
                 <span class="icon-name">Git</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Firefox.svg" alt="Firefox Icon">
+                <img src='{% static "images/Icons/for me/Firefox.svg" %}' alt="Firefox Icon">
                 <span class="icon-name">Firefox</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/FileZilla.svg" alt="FileZilla Icon">
+                <img src='{% static "images/Icons/for me/FileZilla.svg" %}' alt="FileZilla Icon">
                 <span class="icon-name">FileZilla</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Figma.svg" alt="Figma Icon">
+                <img src='{% static "images/Icons/for me/Figma.svg" %}' alt="Figma Icon">
                 <span class="icon-name">Figma</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Eclipse-IDE.svg" alt="Eclipse IDE Icon">
+                <img src='{% static "images/Icons/for me/Eclipse-IDE.svg" %}' alt="Eclipse IDE Icon">
                 <span class="icon-name">Eclipse IDE</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/DBeaver.svg" alt="DBeaver Icon">
+                <img src='{% static "images/Icons/for me/DBeaver.svg" %}' alt="DBeaver Icon">
                 <span class="icon-name">DBeaver</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Cucumber.svg" alt="Cucumber Icon">
+                <img src='{% static "images/Icons/for me/Cucumber.svg" %}' alt="Cucumber Icon">
                 <span class="icon-name">Cucumber</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/CSS3.svg" alt="CSS3 Icon">
+                <img src='{% static "images/Icons/for me/CSS3.svg" %}' alt="CSS3 Icon">
                 <span class="icon-name">CSS3</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Confluence.svg" alt="Confluence Icon">
+                <img src='{% static "images/Icons/for me/Confluence.svg" %}' alt="Confluence Icon">
                 <span class="icon-name">Confluence</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Cloudflare.svg" alt="Cloudflare Icon">
+                <img src='{% static "images/Icons/for me/Cloudflare.svg" %}' alt="Cloudflare Icon">
                 <span class="icon-name">Cloudflare</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Chrome.svg" alt="Chrome Icon">
+                <img src='{% static "images/Icons/for me/Chrome.svg" %}' alt="Chrome Icon">
                 <span class="icon-name">Chrome</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/camtasia.png" alt="Camtasia Icon">
+                <img src='{% static "images/Icons/camtasia.png" %}' alt="Camtasia Icon">
                 <span class="icon-name">Camtasia</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/BrowserStack.svg" alt="BrowserStack Icon">
+                <img src='{% static "images/Icons/for me/BrowserStack.svg" %}' alt="BrowserStack Icon">
                 <span class="icon-name">BrowserStack</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Apple.svg" alt="Apple Icon">
+                <img src='{% static "images/Icons/for me/Apple.svg" %}' alt="Apple Icon">
                 <span class="icon-name">Apple</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Apple-Safari.svg" alt="Apple-Safari Icon">
+                <img src='{% static "images/Icons/for me/Apple-Safari.svg" %}' alt="Apple-Safari Icon">
                 <span class="icon-name">Apple-Safari</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Android.svg" alt="Android Icon">
+                <img src='{% static "images/Icons/for me/Android.svg" %}' alt="Android Icon">
                 <span class="icon-name">Android</span>
               </div>
 
               <div class="icon-wrapper">
-                <img src="./images/Icons/for me/Android-Studio.svg" alt="Android Studio Icon">
+                <img src='{% static "images/Icons/for me/Android-Studio.svg" %}' alt="Android Studio Icon">
                 <span class="icon-name">Android Studio</span>
               </div>
 
@@ -1089,22 +1091,22 @@
       
 
         <div class="w3-col m3 slide hidden" data-slide="left">
-            <img src="./images/cropped/From Tester to QA Lead Game Testing, Jira and QA Mastery Dec 4 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/From Tester to QA Lead Game Testing, Jira and QA Mastery Dec 4 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="From Tester to QA Lead Game Testing, Jira and QA Mastery">
         </div>
 
         <div class="w3-col m3 slide hidden" data-slide="bottom">
-            <img src="./images/cropped/DevOps Tools for Beginners Vagrant Dec 02 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/DevOps Tools for Beginners Vagrant Dec 02 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="DevOps Tools for Beginners Vagrant">
         </div>
 
         <div class="w3-col m3 slide hidden" data-slide="bottom">
-            <img src="./images/cropped/Malware Analysis Dec 02 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Malware Analysis Dec 02 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Malware Analysis">
         </div>
 
         <div class="w3-col m3 slide hidden" data-slide="right">
-            <img src="./images/cropped/Make a WordPress website with Elementor Nov 23 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Make a WordPress website with Elementor Nov 23 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Make a WordPress website with Elementor">
         </div>
 
@@ -1116,181 +1118,181 @@
         <div class="w3-row-padding w3-center w3-section">
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Ethical Hacking Web Hacking Intro Nov 23 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Ethical Hacking Web Hacking Intro Nov 23 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Ethical Hacking Web Hacking Intro">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Securing your Digital Life Nov 23 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Securing your Digital Life Nov 23 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Securing your Digital Life">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Cyber security Anti virus Nov 11 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Cyber security Anti virus Nov 11 2024 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Cyber security Anti virus">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Web enumeration Nov 11 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Web enumeration Nov 11 2024 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Ethical Hacking: Web enumeration">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Android Malware Analysis Nov 10 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Android Malware Analysis Nov 10 2024 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Android Malware Analysis">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Docker Basics Unleashed Nov 10 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Docker Basics Unleashed Nov 10 2024 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Docker Basics Unleashed">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Cyber Security Awareness for Remote Workers Nov 10 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Cyber Security Awareness for Remote Workers Nov 10 2024 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Cyber Security Awareness for Remote Workers">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/uploading Nov 8 2024 r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/uploading Nov 8 2024 r.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Ethical Hacking: Hack by Uploading">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Windows exploitation basics Nov 5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Windows exploitation basics Nov 5.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Windows exploitation basics">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/How websites work Oct 25.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/How websites work Oct 25.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="How websites work">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Introduction_to_Business_and_Data_Analysis.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Introduction_to_Business_and_Data_Analysis.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Introduction to Business and Data Analysis">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Hacker_Methodology.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Hacker_Methodology.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Ethical Hacking: Hacker Methodology">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Git, GitLab, GitHub for software developers Oct 8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Git, GitLab, GitHub for software developers Oct 8.jpg" %}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Git, GitLab, GitHub for software developers">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Selenium with Java Oct 7, 2024.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Selenium with Java Oct 7, 2024.jpg" %}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Selenium WebDriver">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/Success magnet Oct 4, 2024.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Success magnet Oct 4, 2024.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="Success magnet">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/interview system.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/interview system.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="interview system">
         </div>
 
           <div class="w3-col m3 ">
-            <img src="./images/cropped/interviewing skills.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/interviewing skills.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="interviewing skills">
         </div>
 
             <div class="w3-col m3">
-                <img src="./images/cropped/ChatGPT Content.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/ChatGPT Content.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="ChatGPT Content">
             </div>
 
             <div class="w3-col m3 ">
-                <img src="./images/cropped/mac security.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/mac security.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Mac Security Masterclass">
             </div>
             
             <div class="w3-col m3">
-                <img src="./images/cropped/Phishing attacs.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/Phishing attacs.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Identify and Prevent Phishing Attacks: Before They Harm You">
             </div>
     
             <div class="w3-col m3">
-                <img src="./images/cropped/information security fundamentals.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/information security fundamentals.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Information Security Fundamentals">
             </div>
     
             <div class="w3-col m3">
-                <img src="./images/cropped/agile and scrum.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/agile and scrum.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Professional Diploma in Agile and Scrum">
             </div>
 
             <div class="w3-col m3">
-                <img src="./images/cropped/cyberSecurity.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/cyberSecurity.jpg"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="CyberSecurity Bootcamp">
             </div>
 
             <div class="w3-col m3">
-                <img src="./images/cropped/Intro_PlayWright_23_07_24.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/Intro_PlayWright_23_07_24.png" %}'style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Introduction to Playwright">
             </div>
 
             <div class="w3-col m3">
-                <img src="./images/cropped/Intro_Postman_06_24.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+                <img src='{% static "images/cropped/Intro_Postman_06_24.png"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
                 alt="Introduction to Postman API">
             </div>
 
         
             <div class="w3-col m3">
-                <img src="./images/cropped/JS_16_11_23.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/JS_16_11_23.png"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Introduction to JavaScript">
             </div>
 
             <div class="w3-col m3">
-                <img src="./images/cropped/Setting_Foundation_for_Automation_13_11_23.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/Setting_Foundation_for_Automation_13_11_23.png"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Setting a Foundation for Successful Test Automation">
             </div>
 
             <div class="w3-col m3">
-                <img src="./images/cropped/Intro_JS_08_11_23.png" style="width:100%" onclick="onClick(this)" 
+                <img src='{% static "images/cropped/Intro_JS_08_11_23.png"%}' style="width:100%" onclick="onClick(this)" 
                 class="w3-hover-opacity" alt="Introduction to JavaScript">
             </div>
             <div class="w3-col m3">
-                <img src="./images/cropped/Intro_Auto_Testing_10_23.png" style="width:100%" 
+                <img src='{% static "images/cropped/Intro_Auto_Testing_10_23.png"%}' style="width:100%" 
                 onclick="onClick(this)" class="w3-hover-opacity" alt="Introduction to Automation Testing">
             </div>
 
             <div class="w3-col m3">
-                <img src="./images/cropped/GitHub_10_23.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/GitHub_10_23.png"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="GitHub Tutorial for Beginners">
             </div>
 
             <div class="w3-col m3">
-                <img src="./images/cropped/CSS_27_04_2020.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/CSS_27_04_2020.png"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="CSS Course">
             </div>
 
             <div class="w3-col m3">
-                <img src="./images/cropped/HTML_28_07_2016.png" style="width:100%" onclick="onClick(this)" 
+                <img src='{% static "images/cropped/HTML_28_07_2016.png"%}' style="width:100%" onclick="onClick(this)" 
                 class="w3-hover-opacity" alt="HTML course">
             </div>
             <div class="w3-col m3">
-            <img src="./images/cropped/SQL_20_07_16.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/SQL_20_07_16.png"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="This certificate demonstrates theoretical understanding of SQL">
         </div>
 
         <div class="w3-col m3">
-            <img src="./images/cropped/Hillel_2016.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            <img src='{% static "images/cropped/Hillel_2016.png"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                 alt="QA graduation certificate">
         </div>
 
         <div class="w3-col m3">
-                <img src="./images/cropped/rock profile.png" style="width:100%" onclick="onClick(this)" 
+                <img src='{% static "images/cropped/rock profile.png"%}' style="width:100%" onclick="onClick(this)" 
                 class="w3-hover-opacity" alt="Rock Your LinkedIn Profile">
             </div>
 
         <div class="w3-col m3">
-                <img src="./images/cropped/finding job.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src='{% static "images/cropped/finding job.png"%}' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Finding a Job on LinkedIn">
             </div>
 
