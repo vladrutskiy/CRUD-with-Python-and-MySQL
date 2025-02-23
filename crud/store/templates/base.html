@@ -1,9 +1,11 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vlad Rutskyi's Calgary Music Demo Store</title>
+    <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}">
+    <title>Vlad Rutskyi's Calgary Music Store</title>
     <link rel="icon" type="image/png" href="https://rutskyi.free.nf/images/logo.png">
     <link rel="stylesheet" href="https://rutskyi.free.nf/my_w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -99,7 +101,7 @@
     {% for message in messages %}
 
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Holy drums and guitars!</strong> {{ message }}
+        <strong>Music can change the world because it can change people. © Bono </strong> {{ message }}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 

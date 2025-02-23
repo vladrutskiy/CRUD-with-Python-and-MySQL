@@ -2,16 +2,22 @@
 {% load static %}
 {% block content %}
 
-<div class="col-md-6 offset-md-3 id=CMAT">
+
+
+<div>
+  <h1>test hello</h1>
+</div>
+
+<!-- <div class="col-md-6 offset-md-3 id=CMAT">
 
     {% if user.is_authenticated %}
 
-    <h1>Welcome to Calgary Music</h1>
+    <h2>Welcome to Calgary Music</h2>
 
     {% else %}
 
 
-<h1> Login to Calgary Music Admin Panel</h1>
+<h2> Login to Calgary Music Admin Panel</h2>
 <br/>
 
 <form method="post" action="{% url 'home' %}">
@@ -19,25 +25,21 @@
 
     <form>
         <div class="mb-3">
-          <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+        
           <input type="text" class="form-control" name="username" id="username" aria-describedby="username" placeholder="Username" required>
-          <!-- <div name="username" id="uswername" class="form-text">We'll never share your email with anyone else.</div> -->
+          
         </div>
         <div class="mb-3">
-          <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
+          
           <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
         </div>
 
-        <!-- Unwanted checkbox -->
-        <!-- <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div> -->
-        <button type="submit" class="btn btn-primary">Submit</button>
+    
+        <button type="submit" id="submit_login_btn" class="btn 1btn-primary w3-button w3-padding-large w3-light-grey w3-round-large">Submit</button>
       </form>
 </form>
 
-</div>
+</div> -->
 
 {% endif %}
 
