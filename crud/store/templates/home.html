@@ -1,43 +1,79 @@
 {% extends 'base.html' %}
+{% load static %}
+
+
 {% block content %}
 
-<div class="col-md-6 offset-md-3">
-
-    {% if user.is_authenticated %}
-
-    <h1>Welcome to Calgary Music</h1>
-
-    {% else %}
-
-
-<h1> Login to Calgary Music Admin Panel</h1>
-<br/>
-
-<form method="post" action="{% url 'home' %}">
-    {% csrf_token %}
-
-    <form>
-        <div class="mb-3">
-          <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
-          <input type="text" class="form-control" name="username" id="username" aria-describedby="username" placeholder="Username" required>
-          <!-- <div name="username" id="uswername" class="form-text">We'll never share your email with anyone else.</div> -->
-        </div>
-        <div class="mb-3">
-          <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-          <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
-        </div>
-
-        <!-- Unwanted checkbox -->
-        <!-- <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div> -->
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-</form>
-
+<div class="bgimg-5 w3-opacity-min" id="CMAP">
+   <h1 class="w3-content w3-center w3-display-middle w3-text-black" >Calgary Music Shop Admin Panel</h1>
+    
 </div>
+<a class="w3-button w3-center w3-margin-top-big w3-display-middle w3-round-large w3-big w3-light-grey w3-margin-bottom " href="{% url 'login' %}" >LOGIN</a>
+<br>
+    <!-- Container (About Section) -->
+   <div class="w3-content w3-container w3-border w3-border-radius-20" id="about" >
+      <h3 class="w3-center w3-animate-fading">ABOUT THE PROJECT</h3>
 
-{% endif %}
+      <!-- Element where the typing effect will appear -->
+      <h4 class="w3-margin-big  w3-text-teal "  >This Project was made with help of 🧑🏻‍💻 <span class="typedText"></span></h4>
 
+
+    <!-- The typing effect -->
+    <script>
+    var typingEffect = new Typed(".typedText", {
+    strings: ["Python", "Django", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
+    loop: true,  // Keep looping
+    typeSpeed: 50,  // Typing speed in milliseconds
+    backSpeed: 50,   // Speed for erasing the text
+    backDelay: 2000  // Wait before erasing the text
+    });
+    </script>
+
+
+      <p class="w3-margin-big w2-center slide hidden" data-slide="left"><em>The main idea is to showcase my Python knowledge.</em></p>
+      <p class="w3-container w3-margin slide hidden" data-slide="bottom" > <b>The requirements that should be covered in this project.</b>
+        <br>
+        The program must be written primarily in Python.
+        <br>
+        The program must have a graphical user interface (GUI). 
+        <br>
+        This can be in the form of website, or a local
+    desktop application.
+      </p>
+          
+      <div class="w3-row w3-round-large">
+          <div class="w3-col m6 w3-center w3-padding-large">
+              <h4><b><i class="w3-margin-right-big w3-hover-border-pale-green:hover"></i>Calgary Music Shop Admin Panel</b></h4><br>
+              <div class="image" >
+                <img src='{% static "images/CMShome.png" %}' class=" w3-image w2-opacity w2-hover-opacity-off w3-round-large" alt="Photo of CMShome"
+                > 
+              </div>
+            
+          </div>
+    
+          <!-- to Hide this text on small devices just change 2 to 3-->
+          <div class="w3-col m6 w2-hide-small w3-padding-small">
+              <p> </p>
+          <br>
+          <br>
+          <br>
+              <p class="slide hidden" data-slide="right">Welcome to my project. 
+              <br>The user should be able to login to the Django Admin.
+          <br> 
+              The user should be able to create a user in the Django Admin panel.
+          <br> The user should be able to delete a user at the Django Admin panel.     
+          <br> The user should be able to see and edit 14 tables in the Django admin.
+          <br> The user should be able to login to the Calgary Music Shop UI panel.
+              </p>
+          </div>
+        
+      </div>
+   </div>
+
+ 
+ 
 {% endblock %}
+
+
+
+

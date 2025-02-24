@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="col-md-6 offset-md-3" id="CMAP">
+    {% if user.is_authenticated %}
+        <h2>Welcome to Calgary Music</h2>
+
+{% endif %}
+</div>
+{% endblock %}
