@@ -30,6 +30,7 @@
         </li> -->
         {% endif %}
       
+
     </div>
 
     <!-- Navbar on small screens -->
@@ -38,8 +39,10 @@
         <a href="{% url 'index'%}#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
         <a href="{% url 'index'%}#certificates" class="w3-bar-item w3-button" onclick="toggleFunction()">CERTIFICATES</a>
         <a href="{% url 'index'%}#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-        <a href="{% url 'home' %}" class="w3-bar-item w3-button" onclick="toggleFunction()"> CMAP</a>
-        <a href="{% url 'login' %}" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> LOGIN</a>
+        <a href="{% url 'home' %}" class="w3-bar-item w3-button" onclick="toggleFunction()">CMAP</a>
+        <a href="{% url 'login' %}" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i>LOGIN</a>
+        <a href="{% url 'register' %}" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i>Register</a>
+      
        
     </div>
 </div>

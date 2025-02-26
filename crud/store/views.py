@@ -1,7 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from .forms import RegistrationForm
 from .models import Persons
+
+
+
 
 # Create your views here.
 
@@ -38,6 +42,7 @@ def login_view(request):
 # logout page view
 def logout_view(request):
     logout(request)
+
     messages.success(request, '  You are now logged out')
     return redirect ('login')
 
@@ -83,3 +88,24 @@ def person_delete(request, pk):
 # Add a person 
 def person_add_view(request):
     return render(request, 'person_add.html', {})
+  
+# creating registration view/function
+def register_view(request):
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            # Auth and login user right away
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password1')
+            user = authenticate(username = username, password = password)
+            login(request, user)
+            messages.success(request, 'You are successfully registered and welcome to Calgary Music')
+            return redirect ('admin_panel')
+        else:
+            messages.error(request, 'There was an error with your registration, please correct the errors')
+    else:
+        form = RegistrationForm()
+    return render(request, 'register.html', {'form': form})  
+  
+  
