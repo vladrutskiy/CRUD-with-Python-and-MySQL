@@ -1717,6 +1717,12 @@ a {
   background-color: #f1f1f1 !important
 }
 
+.w3-light-red,
+.w3-light-hover-red:hover {
+  color: #fff !important;
+  background-color: #e56b62 !important
+}
+
 .w3-dark-grey,
 .w3-hover-dark-grey:hover,
 .w3-dark-gray,

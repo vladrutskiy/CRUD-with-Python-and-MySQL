@@ -3,9 +3,9 @@
 
 <div class="col-md-6 offset-md-3">
 
-<h1>Register</h1>
+<h2 class="w3-content w3-center ">Register a new admin user</h2>
 
-<form id = "register" method = "post" action="">
+<form class="w3-content" id = "register" method = "post" action="">
     {% csrf_token %}
 
     {% if form.errors %}
@@ -22,9 +22,11 @@
     {{ form.as_p }}
 
     <br/>
-    <button type = "submit" id = "submit" class="btn btn-primary">Submit</button>
-   
+    <button type = "submit" id = "submit" class="w3-bar-item w3-button w3-round-large w3-light-grey w3-right">SUBMIT</button>
+    <a href="{% url 'login' %}" class = " 3-bar-item w3-button w3-right w3-round-large w3-light-grey w3-margin-right">LOGIN</a>
+    <br>
 </form>
-
+<br>
 </div>
+<br>
 {% endblock %}
