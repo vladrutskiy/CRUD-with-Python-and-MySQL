@@ -18,18 +18,16 @@
         <a href="{% url 'home' %}" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> CMAP</a>
 
         {% if user.is_authenticated %}
-        <a href="{% url 'logout' %}" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> LOGOUT</a>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-        </li> -->
+        <a href="{% url 'logout' %}" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa "></i> LOGOUT</a>
+       
 
         {% else %}
-        <a href="{% url 'login' %}" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> LOGIN</a>
-        <!-- <li class="nav-item">
-          <a class="nav-link " href="{% url 'home' %}">Login</a>
-        </li> -->
+        <a href="{% url 'login' %}" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa "></i> LOGIN</a>
+        <a href="{% url 'register' %}" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa "></i> REGISTER</a>
+        
         {% endif %}
       
+
     </div>
 
     <!-- Navbar on small screens -->
@@ -38,8 +36,10 @@
         <a href="{% url 'index'%}#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
         <a href="{% url 'index'%}#certificates" class="w3-bar-item w3-button" onclick="toggleFunction()">CERTIFICATES</a>
         <a href="{% url 'index'%}#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-        <a href="{% url 'home' %}" class="w3-bar-item w3-button" onclick="toggleFunction()"> CMAP</a>
-        <a href="{% url 'login' %}" class="w3-bar-item w3-button w3-hide-small"><i class="fa "></i> LOGIN</a>
+        <a href="{% url 'home' %}" class="w3-bar-item w3-button" onclick="toggleFunction()">CMAP</a>
+        <a href="{% url 'login' %}" class="w3-bar-item w3-button "><i class="fa "></i>LOGIN</a>
+        <a href="{% url 'register' %}" class="w3-bar-item w3-button "><i class="fa "></i>Register</a>
+      
        
     </div>
 </div>
