@@ -1,10 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
-from .forms import RegistrationForm
 from .models import Persons
-
-
+from .forms import RegistrationForm
 
 
 # Create your views here.
@@ -85,11 +83,7 @@ def person_delete(request, pk):
         return redirect('login')  # Redirect to login if not authenticated
     
 
-# Add a person 
-def person_add_view(request):
-    return render(request, 'person_add.html', {})
-  
-# creating registration view/function
+# creating registration an admin user view/function
 def register_view(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
@@ -108,4 +102,8 @@ def register_view(request):
         form = RegistrationForm()
     return render(request, 'register.html', {'form': form})  
   
-  
+
+
+# Add a person from UI
+def person_add_view(request):
+    return render(request, 'person_add.html', {})
