@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h2 class="w3-content w3-center ">Person's page</h2>
+<!-- Container (grid section) -->
+<div class="w3-content w3-container w3-border w3-border-radius-20" id="grid" >
+    <h3>Person's record</h3>
+
+
+    <table class=" w3-table  w3-centered w3-table-all w3-striped  w3-hoverable ">
+        <thead>
+        <tr>
+            
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">City</th>
+        </tr>
+        </thead>
+        <tbody >
+        <tr>
+                <td>{{ person_record.PersonID }} </td>
+                    <td>{{ person_record.FirstName }} </td>
+                    <td>{{ person_record.LastName }} </td>
+                            <td>{{ person_record.Address }} </td>
+                                <td> {{ person_record.City }} </td>
+        
+
+            </tr>
+
+        </tbody>
+       
+    </table>
+    <br>
+    <a href="{% url 'admin_panel' %}" class = " 3-bar-item w3-button w3-hide-small w3-right ">Go back</a>
+    <a href="{% url 'person_delete' person_record.PersonID %}" class = " 3-bar-item w3-button w3-hide-small w3-right w3-hover-red">DELETE</a>
+    <br>
+
+
+    <br>
+</div>  
+<br>      
+{% endblock %}

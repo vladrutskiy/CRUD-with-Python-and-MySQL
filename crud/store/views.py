@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from .models import Persons
 
 # Create your views here.
 
@@ -46,9 +47,39 @@ def index_view(request):
 
 # Admin Panel view
 def admin_panel_view(request):
+    persons = Persons.objects.all()
     # Ensure only authenticated users can access this page
     if not request.user.is_authenticated:
-        messages.error(request, 'You must be logged in to access the admin panel')
+        messages.error(request, 'You must be logged in to access the Admin Panel')
         return redirect('login')  # Redirect to login if not authenticated
+    # else: 
+    #     return render (request)
 
-    return render(request, 'admin_panel.html')
+    
+
+    return render(request, 'admin_panel.html', {'persons': persons})
+
+def person(request, pk):
+    if  request.user.is_authenticated:
+        # searching for a specific person
+        person_record = Persons.objects.get(PersonID = pk)
+        return render(request, 'person.html', {'person_record': person_record})
+    else:
+         messages.error(request, 'You must be logged in to access the Admin Panel')
+         return redirect('login')  # Redirect to login if not authenticated
+
+# delete a person form a list
+def person_delete(request, pk):
+    if  request.user.is_authenticated:
+        delete_record = Persons.objects.get(PersonID = pk)
+        delete_record.delete()
+        messages.success(request, "You have successfully deleted…")
+        return redirect('admin_panel')
+    else:
+        messages.error(request, 'You must be logged in to access the Admin Panel')
+        return redirect('login')  # Redirect to login if not authenticated
+    
+
+# Add a person 
+def person_add_view(request):
+    return render(request, 'person_add.html', {})
