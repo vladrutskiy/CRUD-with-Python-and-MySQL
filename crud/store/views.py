@@ -68,7 +68,7 @@ def person(request, pk):
          messages.error(request, 'You must be logged in to access the Admin Panel')
          return redirect('login')  # Redirect to login if not authenticated
 
-
+# delete a person form a list
 def person_delete(request, pk):
     if  request.user.is_authenticated:
         delete_record = Persons.objects.get(PersonID = pk)
@@ -78,3 +78,8 @@ def person_delete(request, pk):
     else:
         messages.error(request, 'You must be logged in to access the Admin Panel')
         return redirect('login')  # Redirect to login if not authenticated
+    
+
+# Add a person 
+def person_add_view(request):
+    return render(request, 'person_add.html', {})

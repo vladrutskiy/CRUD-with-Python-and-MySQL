@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+    {% load static %}
+        {% block content %}
+
+
+            {% if user.is_authenticated %}
+                <h2 class="w3-content w3-center ">Create a Person page</h2>
+                <!-- Container (grid section) -->
+                <div class="w3-content w3-container w3-border w3-border-radius-20" id="grid" >
+                    <h3>Person's record creation</h3>
+
+                    <form method="post" action="{% url 'person_add' %}">
+                        {% csrf_token %}
+<!-- Here we need to implement a registration functionality -->
+                        {{ form.as_p  }}
+
+            {% endif %}
+                    <br>
+                    <a href="{% url 'admin_panel' %}" class = " 3-bar-item w3-button w3-hide-small w3-right ">Go back</a>
+                    <br>
+                    <br>
+                </div>  
+            <br>      
+        {% endblock %}

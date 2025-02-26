@@ -1,59 +1,61 @@
 {% extends 'base.html' %}
-{% load static %}
-{% block content %}
+    {% load static %}
+        {% block content %}
 
 
-    {% if user.is_authenticated %}
-    <h2 class="w3-content w3-center ">Welcome to Calgary Music</h2>
-    <!-- Container (grid section) -->
-   <div class="w2-content w3-container w3-border w3-border-radius-20" id="grid" >
-        
-        <h3>Persons list</h3>
+            {% if user.is_authenticated %}
+            <h2 class="w3-content w3-center ">Welcome to Calgary Music</h2>
+            <!-- Container (grid section) -->
+            <div class="w2-content w3-container w3-border w3-border-radius-20" id="grid" >
+                    
+                    <h3>Persons list</h3>
 
-        <table class=" w3-table  w3-centered w3-table-all w3-striped  w3-hoverable ">
-            <thead>
-              <tr>
-                
-                <th scope="col">ID</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <!-- <th scope="col">Address</th>
-                <th scope="col">City</th> -->
-              </tr>
-            </thead>
-            <tbody >
-              <tr>
-                {% if persons %}
-              
-                {% for person in persons %}
-    
+                    <table class=" w3-table  w3-centered w3-table-all w3-striped  w3-hoverable ">
+                        <thead>
+                        <tr>
+                            
+                            <th scope="col">ID</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <!-- <th scope="col">Address</th>
+                            <th scope="col">City</th> -->
+                        </tr>
+                        </thead>
+                        <tbody >
+                        <tr>
+                            {% if persons %}
                         
-                            <td><a href="{% url 'person' person.PersonID %}" >{{ person.PersonID }} </a></td>
-                                <td><a href="{% url 'person' person.PersonID %}" a> {{ person.FirstName }} </a></td>
-                                    <td><a href="{% url 'person' person.PersonID %}" a> {{ person.LastName }} </a></td>
-                                        <!-- <td><a href="{% url 'person' person.PersonID %}" a> {{ person.Address }} </a></td>
-                                            <td><a href="{% url 'person' person.PersonID %}" a> {{ person.City }} </a></td>
-                             -->
-    
-                </tr>
-             
-    
-                {% endfor %}
-           
-            {% endif %}
-           
-             
-            </tbody>
-          </table>
+                            {% for person in persons %}
+                
+                                    
+                                        <td><a href="{% url 'person' person.PersonID %}" >{{ person.PersonID }} </a></td>
+                                            <td><a href="{% url 'person' person.PersonID %}" a> {{ person.FirstName }} </a></td>
+                                                <td><a href="{% url 'person' person.PersonID %}" a> {{ person.LastName }} </a></td>
+                                                    <!-- <td><a href="{% url 'person' person.PersonID %}" a> {{ person.Address }} </a></td>
+                                                        <td><a href="{% url 'person' person.PersonID %}" a> {{ person.City }} </a></td>
+                                        -->
+                
+                            </tr>
+                        
+                
+                            {% endfor %}
+                    
+                        {% endif %}
+                    
+                        
+                        </tbody>
+                    </table>
+
+                    <br>
+                    <a href="{% url 'person_add' %}" class = " 3-bar-item w3-button w3-hide-small w3-right ">Add a Person</a>
+                    <br>
 
 
 
 
-
-
-    {% endif %}
-        <br>
-   </div>  
-   <br>  
-{% endblock %}
+                {% endif %}
+                    <br>
+            </div>  
+        <br>  
+        {% endblock %}
 
