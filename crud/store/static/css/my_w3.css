@@ -2282,3 +2282,23 @@ body, html {
     animation-duration: s; /* Speed up animation on smaller screens for better visibility */
   }
 }
+
+
+/* Customizing alerts */
+.alert-custom-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #8bdb9e;
+}
+
+.alert-custom-error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #e93144;
+}
+
+.alert-custom-warning {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  color: #d5b350;
+}

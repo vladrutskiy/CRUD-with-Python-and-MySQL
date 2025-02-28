@@ -145,9 +145,10 @@
 
 
 
-    <div id="autoDismissAlert" class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Music can change the world because it can change people. © Bono </strong> {{ message }}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div id="autoDismissAlert" class="w3-content w-container alert {% if message.tags == 'error' %}alert-danger{% else %}alert-{{ message.tags|lower }}{% endif %} alert-dismissible fade show" role="alert">
+        <strong>Music can change the world because it can change people. © Bono </strong> <br>
+        {{ message }}
+        <button type="button" class="btn-close w3-spin " data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 
 

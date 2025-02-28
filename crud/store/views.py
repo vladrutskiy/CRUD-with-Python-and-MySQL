@@ -41,7 +41,7 @@ def login_view(request):
 def logout_view(request):
     logout(request)
 
-    messages.success(request, '  You are now logged out')
+    messages.warning(request, '  You are now logged out')
     return redirect ('login')
 
 # index.html function
@@ -69,7 +69,7 @@ def person(request, pk):
         person_record = Persons.objects.get(PersonID = pk)
         return render(request, 'person.html', {'person_record': person_record})
     else:
-         messages.error(request, 'You must be logged in to access the Admin Panel')
+         messages.warning(request, 'You must be logged in to access the Admin Panel')
          return redirect('login')  # Redirect to login if not authenticated
 
 # delete a person form a list
@@ -80,7 +80,7 @@ def person_delete(request, pk):
         messages.success(request, "You have successfully deleted…")
         return redirect('admin_panel')
     else:
-        messages.error(request, 'You must be logged in to access the Admin Panel')
+        messages.warning(request, 'You must be logged in to access the Admin Panel')
         return redirect('login')  # Redirect to login if not authenticated
     
 
@@ -117,7 +117,7 @@ def person_add_view(request):
         return render(request, 'person_add.html', {'form': form})  
 
     else:
-         messages.error(request, 'You have to be Logged in to create a new record')
+         messages.warning(request, 'You have to be Logged in to create a new record')
     return redirect('login')  # Redirect to login if not authenticated
 
 
@@ -137,5 +137,23 @@ def person_update(request, pk):
                 messages.error(request, 'Please correct the errors below.')
         return render (request, 'person_update.html', {'form': form})
     else:
-        messages.error(request, 'You have to be Logged in to edit a record')
+        messages.warning(request, 'You have to be Logged in to edit a record')
         return redirect('login')  # Redirect to login if not authenticated
+    
+    
+    
+# customizing alerts colors
+# def some_view(request):
+#     # Add a success message
+#     messages.success(request, 'Operation completed successfully!')
+
+#     # Add an error message
+#     messages.error(request, 'An error occurred while processing your request.')
+
+#     # Add a warning message
+#     messages.warning(request, 'Please verify your input before submitting.')
+
+#     # Add an informational message
+#     messages.info(request, 'This is an informational message.')
+
+#     return render(request, 'base.html')
