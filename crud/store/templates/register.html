@@ -1,32 +1,33 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="col-md-6 offset-md-3">
+<!-- <div class="w3-container"> -->
 
-<h2 class="w3-content w3-center ">Register a new admin user</h2>
+    <h2 class="w3-content w3-center ">Register a new admin user</h2>
+    <div class="w3-content w3-container w3-border w3-border-radius-20" id="register_box" >
+      <br>
+        <form class="w3-content " id = "register" method = "post" action="">
+            {% csrf_token %}
 
-<form class="w3-content" id = "register" method = "post" action="">
-    {% csrf_token %}
+                {% if form.errors %}
+                        <div class="alert alert-danger" role="alert" id="alert-danger">
+                            Invalid form submit
+                            {%  for field in form %}
+                                {% if field.errors %}
+                                    {{ field.label_tag }}: {{ field.errors }}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                {% endif %}
 
-    {% if form.errors %}
-            <div class="alert alert-danger" role="alert" id="alert-danger">
-                Invalid form submit
-                {%  for field in form %}
-                 {% if field.errors %}
-                    {{ field.label_tag }}: {{ field.errors }}
-                 {% endif %}
-                 {% endfor %}
-            </div>
-    {% endif %}
+            {{ form.as_p }}
 
-    {{ form.as_p }}
-
-    <br/>
-    <button type = "submit" id = "submit" class="w3-bar-item w3-button w3-round-large w3-light-grey w3-right">SUBMIT</button>
-    <a href="{% url 'login' %}" class = " 3-bar-item w3-button w3-right w3-round-large w3-light-grey w3-margin-right">LOGIN</a>
-    <br>
-</form>
+            <br/>
+            <button type = "submit" id = "submit" class="w3-bar-item w3-button w3-round-large w3-light-grey w3-right">SUBMIT</button>
+            <a href="{% url 'login' %}" class = " 3-bar-item w3-button w3-right w3-round-large w3-light-grey w3-margin-right">LOGIN</a>
+            <br>
+        </form>
 <br>
-</div>
+    </div>
 <br>
 {% endblock %}

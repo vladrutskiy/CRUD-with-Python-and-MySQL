@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .models import Persons
-from .forms import RegistrationForm
+from .forms import RegistrationForm, AddPersonsForm
 
 
 # Create your views here.
@@ -106,4 +106,15 @@ def register_view(request):
 
 # Add a person from UI
 def person_add_view(request):
-    return render(request, 'person_add.html', {})
+    form = AddPersonsForm(request.POST or None)
+    if  request.user.is_authenticated:
+        if request.method == "POST":
+            if form.is_valid():
+               person_add_view = form.save()
+               messages.success(request, 'New person is added.')
+               return redirect ('admin_panel')
+        return render(request, 'person_add.html', {'form': form})  
+
+    else:
+         messages.error(request, 'You have to be logged on to create a new record')
+    return redirect('login')  # Redirect to login if not authenticated

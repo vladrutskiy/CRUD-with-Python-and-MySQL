@@ -9,16 +9,20 @@
                 <div class="w3-content w3-container w3-border w3-border-radius-20" id="grid" >
                     <h3>Person's record creation</h3>
 
-                    <form method="post" action="{% url 'person_add' %}">
+                    <form class="w3-content" id = "ui_register" method="post" action="{% url 'person_add' %}">
                         {% csrf_token %}
 <!-- Here we need to implement a registration functionality -->
                         {{ form.as_p  }}
+                        <br/>
+                        <button type = "submit" id = "submit" class="w3-bar-item w3-button w3-round-large w3-light-grey w3-right">SUBMIT</button>
 
             {% endif %}
-                    <br>
-                    <a href="{% url 'admin_panel' %}" class = " w3-bar-item w3-button w3-right w3-round-large w3-light-grey ">GO BACK</a>
-                    <br>
-                    <br>
+
+                            <a href="{% url 'admin_panel' %}" class = " w3-bar-item w3-button w3-right w3-round-large w3-light-grey w3-margin-right">GO BACK</a>
+                            <br>
+                            <br>
+                      
+                    </form>  
                 </div>  
-            <br>      
+                <br>       
         {% endblock %}
