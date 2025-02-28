@@ -1,13 +1,13 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .models import Persons
-from .forms import RegistrationForm, AddPersonsForm
+from .forms import RegistrationForm, AddPersonsForm, EditPersonsForm
 
 
 # Create your views here.
 
-# login page view
+# Home page view
 def home(request):
     return render(request, 'home.html', {})
 
@@ -62,6 +62,7 @@ def admin_panel_view(request):
 
     return render(request, 'admin_panel.html', {'persons': persons})
 
+# showing a specific user page
 def person(request, pk):
     if  request.user.is_authenticated:
         # searching for a specific person
@@ -116,5 +117,25 @@ def person_add_view(request):
         return render(request, 'person_add.html', {'form': form})  
 
     else:
-         messages.error(request, 'You have to be logged on to create a new record')
+         messages.error(request, 'You have to be Logged in to create a new record')
     return redirect('login')  # Redirect to login if not authenticated
+
+
+# Adding update person functionality
+def person_update(request, pk):
+    if  request.user.is_authenticated:
+        current_record = get_object_or_404(Persons, PersonID=pk)
+        form = EditPersonsForm(request.POST or None, instance=current_record)
+        if request.method == "POST":
+            if form.is_valid():
+                print("Saving form data...")  # Debugging statement
+                form.save()
+                messages.success (request, 'The user record is updated successfully.' )
+                return redirect ('admin_panel')
+            else:
+                # Display error messages if the form is invalid
+                messages.error(request, 'Please correct the errors below.')
+        return render (request, 'person_update.html', {'form': form})
+    else:
+        messages.error(request, 'You have to be Logged in to edit a record')
+        return redirect('login')  # Redirect to login if not authenticated

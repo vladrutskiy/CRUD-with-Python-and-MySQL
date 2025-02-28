@@ -40,3 +40,14 @@ class AddPersonsForm (forms.ModelForm):
     class Meta:
         model = Persons
         exclude = ("user", )
+
+ # UI editing person form
+class EditPersonsForm (forms.ModelForm):
+    FirstName = forms.CharField(required = True, max_length = 10, label = '', widget = forms.TextInput(attrs = {'class':'form-control', 'placeholder': 'First Name'}))
+    LastName = forms.CharField(required = True, max_length = 10, label = '', widget = forms.TextInput(attrs = {'class':'form-control', 'placeholder': 'Last Name'}))
+    Address = forms.CharField(required = True, max_length = 27, label = '', widget = forms.TextInput(attrs = {'class':'form-control', 'placeholder': 'Address'}))
+    City = forms.CharField(required = True, max_length = 10, label = '', widget = forms.TextInput(attrs = {'class':'form-control', 'placeholder': 'City'}))
+
+    class Meta:
+        model = Persons
+        fields = ['FirstName', 'LastName', 'Address', 'City']

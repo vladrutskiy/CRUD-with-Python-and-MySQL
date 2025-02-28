@@ -35,6 +35,7 @@
     </table>
     <br>
     <a href="{% url 'admin_panel' %}" class = " 3-bar-item w3-button w3-right w3-round-large w3-light-grey">GO BACK</a>
+    <a href="{% url 'person_update' person_record.PersonID %}" class = " 3-bar-item w3-button w3-light-grey w3-round-large w3-right w3-hover-cyan w3-margin-right">UPDATE</a>
     <a href="{% url 'person_delete' person_record.PersonID %}" class = " 3-bar-item w3-button w3-light-red w3-round-large w3-right w3-hover-red w3-margin-right">DELETE</a>
     <br>
 

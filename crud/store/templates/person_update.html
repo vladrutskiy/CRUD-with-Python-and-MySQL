@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        {% if user.is_authenticated %}
+            <h2 class="w3-content w3-center ">Update a Person page</h2>
+            <!-- Container (grid section) -->
+                <div class="w3-content w3-container w3-border w3-border-radius-20" id="grid" >
+                    <h3>Person's record update</h3>
+
+                    <form class="w3-content" id = "ui_edit" method="post" >
+                        {% csrf_token %}
+                <!-- Here we need to implement a registration functionality -->
+                        {{ form.as_p  }}
+                        <br/>
+                        <a href="{% url 'admin_panel' %}" class = " w3-bar-item w3-button w3-right w3-round-large w3-light-grey ">GO BACK</a>
+
+                {% endif %}
+
+                            
+                            <button type = "submit" id = "submit" class="w3-bar-item w3-button w3-round-large w3-light-grey w3-hover-cyan w3-right w3-margin-right">UPDATE</button>
+                            <br>
+                            <br>
+                    
+                    </form>  
+                </div>  
+        <br>       
+
+
+{% endblock %}
