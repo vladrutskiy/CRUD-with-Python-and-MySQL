@@ -48,7 +48,7 @@ class Track(models.Model):
     Bytes = models.BigIntegerField()
     UnitPrice = models.DecimalField(max_digits=10, decimal_places=2)
 
-#  Showing desired cpolumns
+#  Showing desired columns
     def __str__(self):
         return (f"{self.TrackId} {self.Name} {self.AlbumId} {self.MediaTypeId} {self.GenreId} {self.Composer} {self.Milliseconds} {self.UnitPrice} ")
     
