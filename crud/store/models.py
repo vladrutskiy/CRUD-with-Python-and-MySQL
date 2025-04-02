@@ -18,7 +18,7 @@ class SalesPersons(models.Model):
         managed = False  # Tell Django not to manage this table
 
 
-# Connecting not empty Album table
+# Connecting Album table
 class Album(models.Model):
     AlbumId = models.SmallIntegerField(primary_key=True)
     Title = models.CharField(max_length=35)
@@ -35,7 +35,7 @@ class Album(models.Model):
         managed = False  # Tell Django not to manage this table        
 
 
-# Connecting not empty Track table
+# Connecting Track table
 class Track(models.Model):
     
     TrackId = models.SmallIntegerField(primary_key=True)
@@ -58,7 +58,7 @@ class Track(models.Model):
         managed = False  # Tell Django not to manage this table
 
 
-# Connecting not empty Artist table
+# Connecting Artist table
 class Artist(models.Model):
     ArtistId = models.SmallIntegerField(primary_key=True)
     Name = models.CharField(max_length=22)
@@ -75,7 +75,7 @@ class Artist(models.Model):
         managed = False  # Tell Django not to manage this table      
 
 
-# Connecting not empty Customer table
+# Connecting Customer table
 class Customer(models.Model):
     CustomerId = models.SmallIntegerField(primary_key=True)
     FirstName = models.CharField(max_length=9)
@@ -102,7 +102,7 @@ class Customer(models.Model):
         managed = False  # Tell Django not to manage this table      
 
 
-# Connecting not empty Employee table
+# Connecting Employee table
 class Employee(models.Model):
     EmployeeId = models.SmallIntegerField(primary_key=True)
     FirstName = models.CharField(max_length=8)
@@ -131,7 +131,7 @@ class Employee(models.Model):
         managed = False  # Tell Django not to manage this table     
 
 
-# Connecting not empty Genre table
+# Connecting Genre table
 class Genre(models.Model):
     GenreId = models.SmallIntegerField(primary_key=True)
     Name = models.CharField(max_length=18)
@@ -148,7 +148,7 @@ class Genre(models.Model):
         managed = False  # Tell Django not to manage this table        
 
 
-# Connecting not empty Invoice table
+# Connecting Invoice table
 class Invoice(models.Model):
     InvoiceId = models.SmallIntegerField(primary_key=True)
     CustomerId = models.SmallIntegerField()
@@ -171,7 +171,7 @@ class Invoice(models.Model):
         managed = False  # Tell Django not to manage this table     
 
 
-# Connecting not empty InvoiceLine table
+# Connecting InvoiceLine table
 class InvoiceLine(models.Model):
     InvoiceLineId = models.SmallIntegerField(primary_key=True)
     InvoiceId = models.SmallIntegerField()
@@ -190,7 +190,7 @@ class InvoiceLine(models.Model):
         managed = False  # Tell Django not to manage this table 
 
 
-# Connecting not empty MediaType table
+# Connecting MediaType table
 class MediaType(models.Model):
     MediaTypeId = models.SmallIntegerField(primary_key=True)
     Name = models.CharField(max_length=27)
@@ -207,7 +207,7 @@ class MediaType(models.Model):
         managed = False  # Tell Django not to manage this table  
 
 
-# Connecting not empty Payment table
+# Connecting Payment table
 class Payment(models.Model):
     Loan_number = models.IntegerField(primary_key=True)
     Payment_number = models.IntegerField()
@@ -225,7 +225,7 @@ class Payment(models.Model):
         managed = False  # Tell Django not to manage this table   
 
 
-# Connecting not empty Persons table
+# Connecting Persons table
 class Persons(models.Model):
     PersonID = models.SmallIntegerField(primary_key=True)
     FirstName = models.CharField(max_length=10)
@@ -245,7 +245,7 @@ class Persons(models.Model):
         managed = False  # Tell Django not to manage this table  
 
 
-# Connecting not empty Playlist table
+# Connecting Playlist table
 class Playlist(models.Model):
     PlaylistId = models.SmallIntegerField(primary_key=True)
     Name = models.CharField(max_length=26)
@@ -262,7 +262,7 @@ class Playlist(models.Model):
         managed = False  # Tell Django not to manage this table      
 
 
-# Connecting not empty PlaylistTrack table
+# Connecting PlaylistTrack table
 class PlaylistTrack(models.Model):
     PlaylistId = models.SmallIntegerField(primary_key=True)
     TrackId = models.SmallIntegerField()
