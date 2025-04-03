@@ -111,7 +111,7 @@ def person_add_view(request):
     if  request.user.is_authenticated:
         if request.method == "POST":
             if form.is_valid():
-               person_add_view = form.save()
+               person_add_view = form.save()  # noqa: F841
                messages.success(request, 'New person is added.')
                return redirect ('admin_panel')
         return render(request, 'person_add.html', {'form': form})  

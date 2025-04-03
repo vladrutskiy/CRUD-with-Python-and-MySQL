@@ -12,7 +12,7 @@ class RegistrationForm(UserCreationForm):
     class Meta:
         model = User
         # to add all fields 
-        # fileds = '__all__'
+        # fields = '__all__'
         fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2')
 
     # some rules for the form
